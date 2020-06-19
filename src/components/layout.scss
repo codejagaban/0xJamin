@@ -90,6 +90,24 @@ nav {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.btn {
+  border: 0.12rem solid #000;
+  padding: 2rem 5rem;
+  margin: 5rem 0;
+  cursor: pointer;
+  font-family: 'TT Common', sans-serif ;
+  font-size: 2rem;
+  color: #464646;
+  background-color: transparent;
+}
+.btn svg {
+  vertical-align: bottom;
+    margin-left: 2rem;
+    animation-name: forward;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 .intro {
   // position: relative;
   // font-family: 'DM Serif Display', serif;
@@ -103,7 +121,7 @@ nav {
   color: #000000;
 }
  .intro h1 {
-  // font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 6rem;
@@ -117,12 +135,7 @@ nav {
   width: 100%;
 
 }
-// .content {
-//   display: flex; 
-// align-items: center;
-// justify-content: center; 
-// min-height: 100%;
-// }
+
 .content { display: flex;
   align-items: center;
   justify-content: center;
