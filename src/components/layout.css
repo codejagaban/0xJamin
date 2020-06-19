@@ -26,18 +26,21 @@ p {
   color: #464646;
 }
 .intro {
-  width: 100%;
+  width: 70%;
   height: 82px;
   top: 10rem;
+  color: #000000;
+}
+.intro h1 {
   font-family: "DM Serif Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 6rem;
   line-height: 82px;
-  color: #000000;
 }
 .container {
-  max-width: 120rem;
+  position: relative;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   width: 100%;
@@ -55,14 +58,14 @@ p {
   display: inline-block;
   position: absolute;
   text-rendering: geometricPrecision;
-  right: -5rem;
+  right: -4rem;
   height: 411px;
   top: 21rem;
   font-family: "DM Serif Display", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 320px;
-  line-height: 0px;
+  line-height: 100px;
   color: rgba(0, 0, 0, 0.03);
   transform: rotate(90deg);
 }

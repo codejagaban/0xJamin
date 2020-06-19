@@ -19,54 +19,116 @@ html {
 body {
  font-size: 1.6px;
  font-family: 'TT Common', sans-serif;
+ background-color: #f3f3f3;
  
 }
 p {
   font-family: 'TT Common', sans-serif;
   font-size: 2rem;
   line-height: 4rem;
-
   color: #464646;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  justify-content: space-between;
+}
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bar1, .bar2, .bar3 {
+  height: 2px;
+  background-color: #000000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.bar1 {
+  width: 30px;
+}
+.bar2 {
+  width: 40px;
+
+}
+.bar3 {
+  width: 15px;
   
 }
+
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 .intro {
   // position: relative;
   // font-family: 'DM Serif Display', serif;
   // font-size: 6rem;
   // color: #000;
-  width: 100%;
+  width: 70%;
   height: 82px;
   // left: 30px;
   top: 10rem;
-  font-family: 'DM Serif Display', serif;
+  
+  color: #000000;
+}
+ .intro h1 {
+  // font-family: 'DM Serif Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 6rem;
   line-height: 82px;
-  
-  color: #000000;
 }
 .container {
-  max-width: 120rem;
+  
+  max-width: 114rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   width: 100%;
 
 }
-.content {
-  display: flex; 
-align-items: center;
-justify-content: center; 
-min-height: 100%;
-}
+// .content {
+//   display: flex; 
+// align-items: center;
+// justify-content: center; 
+// min-height: 100%;
+// }
+.content { display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  width: 100%; 
+   margin: 10% 0;
+    min-height: 200px; 
+    align-items: center; }
+
 .intro__content {
-  display: block;
+  // display: block;
 }
 .greeting {
   display: inline-block;
   position: absolute;
   text-rendering: geometricPrecision;
-  right: -5rem;
+  right: -4rem;
   height: 411px;
   top: 21rem;
 
@@ -74,10 +136,10 @@ min-height: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 320px;
-  line-height: 0px;
+  line-height: 100px;
   
   color: rgba(0, 0, 0, 0.03);
-  
+  z-index: -99;
   transform: rotate(90deg);
 
 }
