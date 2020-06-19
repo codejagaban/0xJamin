@@ -12,13 +12,13 @@ const IndexPage = () => {
   return(
     <Layout>
     <SEO title="Home"  />
-   
-    <div className="container">
     <div className="greeting">
       <div>
       Hello
       </div>
 </div>
+    <div className="container">
+ 
     
  <section className="intro">
 
@@ -30,6 +30,7 @@ const IndexPage = () => {
 <p>
 A frontend developer with a passion for continuous learning focused on delivering sustainable, maintainable and visually compelling applications with user-friendly interaction that drive business growth and improve UX.
 </p>
+<button className="btn "></button>
 </div>
 
    </div>
