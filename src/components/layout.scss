@@ -72,18 +72,20 @@ nav {
 }
 
 /* Rotate first bar */
-.change .bar1 {
+.menuChange .bar1 {
+  width: 3.5rem;
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
 /* Fade out the second bar */
-.change .bar2 {
+.menuChange .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
-.change .bar3 {
+.menuChange .bar3 {
+  width: 3.5rem;
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
@@ -146,7 +148,6 @@ nav {
   font-weight: normal;
   font-size: 33rem;
   // line-height: 100px;
-  
   color: rgba(0, 0, 0, 0.03);
   z-index: -99;
   transform: rotate(90deg);
