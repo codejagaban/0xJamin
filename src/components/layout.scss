@@ -1,39 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 @font-face {
   font-family: "TT Common";
-  src: url(../fonts/TTCommons-Regular.ttf) format("truetype");
+  src: url(../fonts/TTCommons-Regular.ttf) format('truetype');
   font-weight: normal;
 }
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+
 }
 body {
-  font-size: 1.6px;
-  font-family: "TT Common", sans-serif;
+ font-size: 1.6px;
+ font-family: 'TT Common', sans-serif;
+ 
 }
 p {
-  font-family: "TT Common", sans-serif;
+  font-family: 'TT Common', sans-serif;
   font-size: 2rem;
   line-height: 4rem;
+
   color: #464646;
+  
 }
 .intro {
+  // position: relative;
+  // font-family: 'DM Serif Display', serif;
+  // font-size: 6rem;
+  // color: #000;
   width: 100%;
   height: 82px;
+  // left: 30px;
   top: 10rem;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 6rem;
   line-height: 82px;
+  
   color: #000000;
 }
 .container {
@@ -41,12 +51,13 @@ p {
   margin: 0 auto;
   padding: 2rem 1rem;
   width: 100%;
+
 }
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
+  display: flex; 
+align-items: center;
+justify-content: center; 
+min-height: 100%;
 }
 .intro__content {
   display: block;
@@ -58,11 +69,15 @@ p {
   right: -5rem;
   height: 411px;
   top: 21rem;
-  font-family: "DM Serif Display", sans-serif;
+
+  font-family: 'DM Serif Display', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 320px;
   line-height: 0px;
+  
   color: rgba(0, 0, 0, 0.03);
+  
   transform: rotate(90deg);
+
 }
