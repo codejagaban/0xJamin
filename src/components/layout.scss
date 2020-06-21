@@ -32,6 +32,9 @@ p {
 main {
   padding: 3rem;
 }
+header {
+  position: relative;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -41,14 +44,19 @@ nav {
 .spacer {
   flex:  1;
 }
+
+.menu-wrapper {
+}
 .menu {
   display: inline-block;
-  cursor: pointer;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
+  z-index: 999;
   align-items: flex-end;
   outline: none;
-  pointer-events: visible;
+  background-color: transparent;
+  border: 0;
 }
 
 
@@ -62,21 +70,21 @@ nav {
   width: 30px;
 }
 .bar2 {
-  width: 40px;
+  width: 4rem;
 
 }
 .bar3 {
-  width: 15px;
+  width: 1.5rem;
   
 }
 .noChange.menu:hover .bar1,.noChange.menu:hover .bar2,.noChange.menu:hover .bar3 {
-  width: 40px;
+  width: 4rem;
 
 }
 
 /* Rotate first bar */
 .menuChange .bar1 {
-  width: 3rem;
+  width: 3.5rem;
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
 }
@@ -88,9 +96,67 @@ nav {
 
 /* Rotate last bar */
 .menuChange .bar3 {
-  width: 3rem;
+  width: 3.5rem;
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.menu-nav {
+background-color: #ffffff;
+width: 40rem;
+height: 50rem;
+position: absolute;
+right: 27rem;
+padding: 4rem 2rem;
+box-shadow: 0 10px 53px 0 rgba(72, 49, 212, .05);
+top: 2rem;
+}
+.menu-nav::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+
+}
+.menu-nav ul {
+  font-size: 2.4rem;
+position: relative;
+margin-top: 2rem;
+  list-style: none;
+  // display: flex;
+  flex-direction: column ;
+}
+.menu-nav__item {
+  margin: 0 4rem 0 4rem;
+  padding: 1.3rem .5rem;
+  cursor: pointer;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0px);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+  position: relative;
+  overflow: hidden;
+}
+.noChange.menu-nav {
+  display: none;
+  opacity: 0;
+}
+.menu-nav__item::before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 1.5px;
+    height: 1px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.menu-nav:hover::before {
+  left: 0px;
+    right: 0px;
+
 }
 
 .btn {
@@ -155,7 +221,7 @@ nav {
   // font-family: 'DM Serif Display', serif;
   // font-size: 6rem;
   // color: #000;
-  width: 100%;
+  width: 80%;
   height: 82px;
   // left: 30px;
   top: 10rem;
@@ -171,7 +237,7 @@ nav {
 }
 .container {
   
-  max-width: 114rem;
+  max-width: 138.8rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   width: 100%;

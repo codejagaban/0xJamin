@@ -24,14 +24,27 @@ const   onMenuClick = () => {
 
 
     </div>
-    <div className={` ${toggleMenuClass} menu`} onClick={onMenuClick}>
+    <button className={` ${toggleMenuClass} menu`} onClick={onMenuClick}>
 <div className="bar1"></div>
 <div className="bar2"></div>
 <div className="bar3"></div>
-</div>
+      
+</button>
+
 
 
     </nav>
+
+    <div className={`  ${toggleMenuClass} menu-nav`}>
+  <ul>
+    <li className="menu-nav__item"></li>
+    <li className="menu-nav__item">About</li>
+    <li className="menu-nav__item">Projects</li>
+    <li className="menu-nav__item">Resume</li>
+    <li className="menu-nav__item">Contact</li>
+  </ul>
+       
+      </div>
     </div>
 
  
