@@ -47,7 +47,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  outline: none;
+  pointer-events: visible;
 }
+
 
 .bar1, .bar2, .bar3 {
   height: 2px;
@@ -66,14 +69,14 @@ nav {
   width: 15px;
   
 }
-.menu:hover .bar1,.menu:hover .bar2,.menu:hover .bar3 {
+.noChange.menu:hover .bar1,.noChange.menu:hover .bar2,.noChange.menu:hover .bar3 {
   width: 40px;
 
 }
 
 /* Rotate first bar */
 .menuChange .bar1 {
-  width: 3.5rem;
+  width: 3rem;
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
 }
@@ -85,28 +88,67 @@ nav {
 
 /* Rotate last bar */
 .menuChange .bar3 {
-  width: 3.5rem;
+  width: 3rem;
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 .btn {
-  border: 0.12rem solid #000;
-  padding: 2rem 5rem;
+  border: 0;
   margin: 5rem 0;
   cursor: pointer;
+  overflow: hidden;
   font-family: 'TT Common', sans-serif ;
   font-size: 2rem;
   color: #464646;
+  outline: none;
   background-color: transparent;
+  position: relative;
+}
+.btn__content {
+  // position: relative;
+  z-index: 1   ;
+  padding: 1.8rem 5rem;  
+  border: 0.12rem solid #000;
+  width: 100%;
+}
+.btn__content::before {
+  background-color: #000000;
+  content: "";
+  transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+     border: 1rem solid #000;
+    position: absolute;
+    top: 0rem;  
+    bottom: 0;
+    left: -2rem;
+    right: 0;
+    transition: all .4s;
 }
 .btn svg {
   vertical-align: bottom;
     margin-left: 2rem;
+    stroke: #464646;
     animation-name: forward;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+.btn:hover  .btn__content::before, .btn:active .btn__content::before {
+  color: #ffffff;
+  transform: translateX(0);
+  left: 0;
+  height: 108%;
+  background-color: #000000;
+}
+.btn:hover .btn__content {
+  color: #f3f3f3;
+}
+.btn:hover svg {
+  stroke: #f3f3f3;
 }
 .intro {
   // position: relative;
@@ -152,7 +194,7 @@ nav {
   display: inline-block;
   position: absolute;
   text-rendering: geometricPrecision;
-  left: -10rem;
+  left: -22rem;
   height: 411px;
   top: 25rem;
 

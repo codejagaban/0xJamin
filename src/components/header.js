@@ -5,13 +5,13 @@ import Image from './image';
 
 const Header = ({ siteTitle }) => {
   const [state, setState] = useState({
-    toggleMenuClass : ''
+    toggleMenuClass : 'noChange'
   })
 
   const { toggleMenuClass } = state;
 const   onMenuClick = () => {
-  state.toggleMenuClass ? setState({ toggleMenuClass: '' }) : setState({ toggleMenuClass : 'menuChange' })
-}
+  state.toggleMenuClass === 'noChange' ? setState({ toggleMenuClass: 'menuChange' }) : setState({ toggleMenuClass : 'noChange' })
+} 
   return(
     <header>
   
