@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 
+  -webkit-tap-highlight-color: transparent;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
@@ -53,6 +55,9 @@ nav {
   cursor: pointer;
   flex-direction: column;
   z-index: 999;
+  outline: none;
+  fill: none;
+  pointer-events: auto;
   align-items: flex-end;
   outline: none;
   background-color: transparent;
@@ -101,6 +106,9 @@ nav {
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.menu:active {
+
+}
 .menu-nav {
 background-color: #ffffff;
 width: 40rem;
@@ -192,6 +200,14 @@ margin-top: 2rem;
     bottom: 0;
     left: -2rem;
     right: 0;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+-webkit-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+background-image: none;
+
     transition: all .4s;
 }
 .btn svg {
