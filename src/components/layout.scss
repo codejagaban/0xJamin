@@ -43,8 +43,8 @@ header {
   pointer-events: none;
 }
 .cursor--small {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   left: -2.5px;
   top: -2.5px;
   border-radius: 1%;
@@ -185,6 +185,25 @@ margin-top: 2rem;
 
 }
 
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    tranform: translateX(0)
+  }
+	40% {
+     transform: translateX(-15px);
+  }
+	60% {
+     transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(-5px);
+ }
+}
+.bounce {
+   animation: bounce 1s infinite;
+}
+
 .btn {
   border: 0;
   margin: 5rem 0;
@@ -199,8 +218,10 @@ margin-top: 2rem;
 }
 .btn__content {
   // position: relative;
+  display: flex;
   z-index: 1   ;
-  padding: 1.8rem 5rem;  
+  justify-content: space-between;
+  padding: 1.8rem 4rem;  
   border: 0.12rem solid #000;
   width: 100%;
 }
@@ -230,7 +251,7 @@ background-image: none;
 }
 .btn svg {
   vertical-align: bottom;
-    margin-left: 2rem;
+    margin-left: 3rem;
     stroke: #464646;
     animation-name: forward;
     animation-duration: 0.5s;

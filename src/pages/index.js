@@ -34,7 +34,11 @@ A frontend developer with a passion for continuous learning focused on deliverin
 <button className="btn ">
   <div className="btn__content">
   Learn about me 
-<svg width="40" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" className="bow-arrow"><path fill="none" stroke="" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
+<div className="bounce">
+
+<svg width="40" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" className=" bow-arrow"><path fill="none" stroke="" stroke-width="2" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
+
+</div>
 
   </div>
 

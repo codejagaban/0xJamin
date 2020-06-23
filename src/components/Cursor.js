@@ -113,8 +113,8 @@ initCanvas();
       
         return (
             <>
-                      <div class="cursor cursor--small"  ref={(cursor) => { this.cursorRef = cursor; }}></div>
-      <canvas class="cursor cursor--canvas" resize ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
+                      <div class="cursor  cursor--small"  ref={(cursor) => { this.cursorRef = cursor; }}></div>
+      <canvas class="cursor  cursor--canvas" resize ref={(canvas) => { this.canvasRef = canvas; }}></canvas>
             </>
         )
     }
