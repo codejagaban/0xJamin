@@ -12,6 +12,9 @@ const Header = ({ siteTitle }) => {
 const   onMenuClick = () => {
   state.toggleMenuClass === 'noChange' ? setState({ toggleMenuClass: 'menuChange' }) : setState({ toggleMenuClass : 'noChange' })
 } 
+
+
+
   return(
     <header>
   
@@ -46,7 +49,6 @@ const   onMenuClick = () => {
        
       </div>
     </div>
-
  
 </header>
   )
