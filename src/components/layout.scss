@@ -14,6 +14,8 @@
 }
 html {
   font-size: 62.5%;
+  height: 100%;
+  padding: 3rem;
   overflow-x: hidden;
   cursor: none;
 }
@@ -30,9 +32,6 @@ p {
   color: #464646;
 }
 
-main {
-  padding: 3rem;
-}
 header {
   position: relative;
 }
@@ -43,8 +42,8 @@ header {
   pointer-events: none;
 }
 .cursor--small {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   left: -2.5px;
   top: -2.5px;
   border-radius: 1%;
@@ -59,7 +58,6 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  padding: 3rem;
   justify-content: space-between;
 }
 .spacer {
@@ -123,19 +121,15 @@ nav {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
-
-.menu:active {
-
-}
 .menu-nav {
 background-color: #ffffff;
 width: 40rem;
 height: 50rem;
 position: absolute;
-right: 27rem;
+right:16%;
 padding: 4rem 2rem;
 box-shadow: 0 10px 53px 0 rgba(72, 49, 212, .05);
-top: 2rem;
+top: 1%;
 }
 .menu-nav::before {
   content: "";
@@ -272,13 +266,9 @@ background-image: none;
   stroke: #f3f3f3;
 }
 .intro {
-  // position: relative;
-  // font-family: 'DM Serif Display', serif;
-  // font-size: 6rem;
-  // color: #000;
+ 
   width: 80%;
   height: 82px;
-  // left: 30px;
   top: 10rem;
   
   color: #000000;
@@ -292,7 +282,7 @@ background-image: none;
 }
 .container {
   
-  max-width: 138.8rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   width: 100%;
@@ -328,4 +318,14 @@ background-image: none;
   z-index: -99;
   transform: rotate(90deg);
 
+}
+
+//RESPONSIVENESS 
+@media screen and ( max-width: 1850px) {
+.menu-nav {
+right: 0%;
+}
+.intro {
+  width: 100%;
+}
 }

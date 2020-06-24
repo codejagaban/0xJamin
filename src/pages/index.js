@@ -12,7 +12,7 @@ const IndexPage = () => {
 
   return(
     <Layout>
-    <SEO title="Home"  />
+    <SEO title="Trust Jamin Okpukoro"  />
     <div className="greeting">
       <div>
       Hello
