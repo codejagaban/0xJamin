@@ -1,5 +1,2 @@
-## My Portfolio 🚀
+# Hi There 👋, 
 
-
-
-Built with Gatsby
