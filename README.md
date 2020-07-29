@@ -1,5 +1,5 @@
 # Hi There 👋
-<p>I'm Trust Jamin Okpukoro, a Frontend Engineer who loves the artistic combination of ```code``` and design 🎨, thus I find passion in building sustainable, maintainable and visually compelling applications with user-friendly interaction that drive business growth and improve UX.</p>
+<p>I'm Trust Jamin Okpukoro, a Frontend Engineer who loves the artistic combination of `code` and design 🎨, thus I find passion in building sustainable, maintainable and visually compelling applications with user-friendly interaction that drive business growth and improve UX.</p>
 
 I also have a passion for building communities and helping others, this has led me to help grow existing communities in my locality and strength existing ones. I'm currently leading the [GDG Sapele](https://developers.google.com/community/gdg) community as the Lead Organizer.
 
