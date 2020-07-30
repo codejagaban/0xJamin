@@ -38,18 +38,31 @@ const   onMenuClick = () => {
 
     </nav>
 
-    <div className={`  ${toggleMenuClass} menu-nav`}>
-  <ul>
-    <li className="menu-nav__item"></li>
-    <li className="menu-nav__item">About</li>
-    <li className="menu-nav__item">Projects</li>
-    <li className="menu-nav__item">Resume</li>
-    <li className="menu-nav__item">Contact</li>
-  </ul>
-       
-      </div>
     </div>
  
+    <div className={`  ${toggleMenuClass} menu-nav`}>
+      <div className="box-wrapper">
+      <div className="box"></div>
+      <div className="box"></div>
+      <div className="box"></div>
+      <div className="box"></div>
+      </div>
+   
+     
+<ul className="menu-nav__items">
+  <li>
+    <Link to="/" className="menu-nav__link">Home</Link>
+    <Link to="/about" className="menu-nav__link">About</Link>
+    <Link to="/" className="menu-nav__link">Projects</Link>
+    <Link to="/" className="menu-nav__link">Resume</Link>
+    <Link to="/" className="menu-nav__link">Contact</Link>
+  </li>
+
+</ul>
+
+
+       
+      </div>
 </header>
   )
 }

@@ -11,7 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.scss";
-import Cursor from "./Cursor";
+import '../styles/animations.css';
+// import Cursor from "./Cursor";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,18 +26,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="site">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <Cursor/>
+        {/* <Cursor/> */}
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a>Made with coffe by <a href="https://github.com/codekyd" target="_blank" rel="noreferrer">codekyd</a> </a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
