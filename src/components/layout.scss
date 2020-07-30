@@ -389,6 +389,9 @@ background-image: none;
   
   color: #000000;
 }
+.ani-box {
+  width: 100%;
+}
  .ani-text {
   // font-size: 2rem;
   animation: fill 0.3s ease-in forwards 3.0s;
@@ -516,7 +519,7 @@ background-image: none;
   
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 4rem;
   width: 100%;
 
 }
