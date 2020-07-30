@@ -32,9 +32,9 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         {/* <Cursor/> */}
         <footer>
-          © {new Date().getFullYear()}, Built with
+          {/* © {new Date().getFullYear()}, Built with
           {` `}
-          <a>Made with coffe by <a href="https://github.com/codekyd" target="_blank" rel="noreferrer">codekyd</a> </a>
+          <a>Made with coffe by <a href="https://github.com/codekyd" target="_blank" rel="noreferrer">codekyd</a> </a> */}
         </footer>
       </div>
     </div>
