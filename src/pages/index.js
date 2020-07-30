@@ -38,7 +38,7 @@ import { Link } from 'gatsby';
    <div className="content">
 <div className="intro__content">
 <p className="toast__content">Hi There 👋, I'm</p>
-<svg width="100%" height="65" viewBox="0 0 1500 75" fill="none" className="ani-text" xmlns="http://www.w3.org/2000/svg">
+<svg width="801" height="75" viewBox="0 0 801 75" fill="none" className="ani-text" xmlns="http://www.w3.org/2000/svg">
 
 <path d="M24.9938 12.9243V56.1135H14.8623V12.9243H1V3.98108H38.8195V12.9243H24.9938Z" stroke="black" stroke-width="1" mask="url(#path-1-outside-1)"/>
 <path d="M52.316 56.1135H42.5868V20.0134H51.9502V23.6489C54.3154 20.7163 57.8267 19.25 62.484 19.25C63.1912 19.25 64.2885 19.3469 65.7759 19.5408L64.6786 28.5568C63.9471 28.3144 62.7157 28.1932 60.9844 28.1932C59.2532 28.1932 57.5707 28.7143 55.937 29.7565C54.3032 30.7986 53.0962 32.0105 52.316 33.3919V56.1135Z" stroke="black" stroke-width="1" mask="url(#path-1-outside-1)"/>
