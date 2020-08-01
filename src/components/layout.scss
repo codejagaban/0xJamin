@@ -13,11 +13,17 @@
 }
 
 @font-face {
-  font-family: "tt norms";
-  src: url(../fonts/tt-norms-regular.ttf) format('truetype');
+  font-family: "sailec";
+  src: url(../fonts/Sailec-Light.ttf) format('truetype');
   font-weight: normal;
 }
-// @import url('https://fonts.googleapis.com/css2?family=tt norms&display=swap');
+
+@font-face {
+  font-family: "tt norms";
+  src: url(../fonts/tt-norms.ttf) format('truetype');
+  font-weight: normal;
+}
+// @import url('https://fonts.googleapis.com/css2?family=sailec&display=swap');
 
 
 
@@ -31,6 +37,9 @@ body {
 font-family: 'tt norms', sans-serif;
  background-color: #fafafa;
  color: #363636;
+ letter-spacing: .3px;
+ line-height: 2;
+ opacity: 0.9;
  
 }
 h1 {
@@ -42,10 +51,9 @@ h1 {
 }
 p {
   margin-top: 2rem;
- font-family: 'tt norms', sans-serif;
-  font-size: 1.9rem;
-  line-height: 3rem;
-  opacity: 0.9;
+ font-family: 'sailec', sans-serif;
+  font-size: 1.6rem;
+
   // letter-spacing: .05em;
 
 }
@@ -53,29 +61,7 @@ p {
 header {
   position: relative;
 }
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-}
-.cursor--small {
-  width: 1rem;
-  height: 1rem;
-  // left: -2.5px;
-  // top: -2.5px;
-  // border-radius: 30px;
-  z-index: 99;
-  background: #000;
-  border: 2px solid #000;
-  animation: pulse 2s infinite;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-
-}
 .toast__content {
-  font-size: 2rem;
   margin-bottom: 2rem;
 }
 .cursor--canvas {
@@ -148,7 +134,7 @@ nav {
 }
 
 .menuChange .bar1, .menuChange .bar3 {
-  background-color: #000;
+  background-color: #fff;
 }
 /* Rotate last bar */
 .menuChange .bar3 {
@@ -202,7 +188,7 @@ nav {
 .box {
 width: 25vw;
 height: 0;
-background: #fff;
+background: #000;
 }
 
 .box:nth-child(1) {
@@ -230,7 +216,7 @@ transform-origin: 50% 100%;
 
 .menuChange
 .menu-nav__items {
-  color: #000;
+  color: #fff;
   font-size: 3rem;
 
   display: inline-block;
@@ -244,7 +230,7 @@ transform-origin: 50% 100%;
 transform: translateX(-50%);
 }
 .menu-nav__link {
-  color: #000;
+  color: #fff;
   padding: 1rem 2rem;
   font-family: 'tt norms', sans-serif;;
 display: inline-block;
@@ -257,7 +243,7 @@ text-decoration: none;
   position: absolute;
   width: 100%;
   height: 2px;
-  background:#000;
+  background:#fff;
   top:47%;
   animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
@@ -323,7 +309,7 @@ text-decoration: none;
 .menu-nav__social {
   margin-top: 30%;
   padding: 1rem 2rem;
-  font-family: 'tt norms', sans-serif;;
+  font-family: 'sailec', sans-serif;;
 display: inline-block;
 text-decoration: none;
   font-size: 2rem;
