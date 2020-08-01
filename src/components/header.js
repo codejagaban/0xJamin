@@ -64,7 +64,7 @@ const   onMenuClick = () => {
   <li>
     <Link to="/" className="menu-nav__link"><i className="lab la-github"></i></Link>
     <Link to="/about" className="menu-nav__link"><i className="lab la-linkedin"></i></Link>
-    <Link to="/" className="menu-nav__link">Projects</Link>
+    <Link to="/" className="menu-nav__link"><i className="lab la-twitter"></i></Link>
     <Link to="/" className="menu-nav__link">Resume</Link>
     <Link to="/" className="menu-nav__link">Contact</Link>
   </li>
@@ -74,7 +74,7 @@ const   onMenuClick = () => {
 <li className="menu-nav__social">
 {/* <Link to="/" className="menu-nav__logo"></Link>
 <Link to="/" className="menu-nav__logo"></Link>
-<Link to="/" className="menu-nav__logo"><i className="lab la-twitter"></i></Link>
+<Link to="/" className="menu-nav__logo"></Link>
 <Link to="/" className="menu-nav__logo"><i className="lab la-dribbble"></i></Link>
 <Link to="/" className="menu-nav__logo"><i className="lab la-facebook-f"></i></Link> */}
 </li>
