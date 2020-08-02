@@ -23,10 +23,6 @@
   src: url(../fonts/tt-norms.ttf) format('truetype');
   font-weight: normal;
 }
-// @import url('https://fonts.googleapis.com/css2?family=sailec&display=swap');
-
-
-
 html {
   font-size: 62.5%;
   height: 100%;
@@ -42,6 +38,38 @@ font-family: 'tt norms', sans-serif;
  opacity: 0.9;
  
 }
+.fade-in {
+  animation: fadeIn ease .8s;
+  -webkit-animation: fadeIn ease .8s;
+  -moz-animation: fadeIn ease .8s;
+  -o-animation: fadeIn ease .8s;
+  -ms-animation: fadeIn ease .8s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
 h1 {
   font-family: 'Canela', sans-serif;
   font-weight: 300 ;
@@ -49,6 +77,15 @@ h1 {
   color: #363636;
   line-height: 1.35;
   letter-spacing: 0.035rem;
+}
+h2 {
+  font-family: 'Canela', sans-serif;
+  font-weight: 300 ;
+  font-size: 5rem;
+  color: #363636;
+  line-height: 1.35;
+  letter-spacing: 0.035rem;
+
 }
 p {
   margin-top: 2rem;
@@ -64,14 +101,6 @@ header {
 }
 .toast__content {
   margin-bottom: 2rem;
-}
-.cursor--canvas {
-  // width: 100vw;
-  // height: 100vh;
-  z-index: 999;
-  animation: pulse 2s infinite;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 nav {
   display: flex;
@@ -243,7 +272,7 @@ text-decoration: none;
   content:'';
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background:#fff;
   top:47%;
   animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
@@ -562,7 +591,7 @@ background-image: none;
   left: -22rem;
   height: 411px;
   top: 25rem;
-
+  // line-height: 1.2;
   font-family: 'Canela', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -581,6 +610,9 @@ right: 0%;
 }
 .intro {
   width: 100%;
+}
+.menu-nav__link {
+  display: block;
 }
 
 .social__link {

@@ -10,20 +10,14 @@ import { Link } from 'gatsby';
 
 
  class IndexPage extends Component {
-  componentDidMount() {
-    const node = ReactDOM.findDOMNode(this);
-    const nameEle = node.querySelectorAll(".ani-text path")
-   for (let i = 0; i < nameEle.length; i++) {
-     const element = nameEle[i].getTotalLength();
 
-     console.log(element)
-     
-   }
-  }
+
+   
+ 
   render() {
     return (
     <Layout>
-    <SEO title="Trust Jamin Okpukoro"  />
+    <SEO title="Home"  />
     <div className="greeting">
       <div>
       Hello
@@ -41,7 +35,7 @@ import { Link } from 'gatsby';
 
 <h1  data-text="I'm Trust Jamin Okpukoro"> Trust Jamin Okpukoro</h1> 
 <p>
-A frontend developer that loves building solid and scalable applications with great user experiences. Currently  practicing the art of minimalism by telling more with less.
+Frontend developer that loves building solid and scalable applications with great user experiences. Currently  practicing the art of minimalism by telling more with less.
 </p>
 <Link to="/about" className="btn ">
   <div className="btn__content"> about me 

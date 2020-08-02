@@ -23,7 +23,9 @@ const   onMenuClick = () => {
     <div className="container">
     <nav>
     <div className="nav-logo" style={{ width: '80px' }}>
-      <Image/>
+    <Link to="/">
+    <Image/>
+    </Link>
     </div>
     <div className="spacer">
 

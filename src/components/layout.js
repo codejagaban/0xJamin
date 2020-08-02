@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="site">
+    <div className="site fade-in">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>

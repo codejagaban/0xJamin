@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Frontend Developer`,
+    title: `Trust Jamin Okpukoro`,
     description: `Hi, I'm Trust Jamin Okpukoro a Frontend Developer and a JavaScript Engineer passionate about making the web easily accessible for everyone.`,
     author: `@codekyd`,
   },
