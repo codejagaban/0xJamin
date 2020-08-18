@@ -7,8 +7,8 @@
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "TT Common";
-  src: url(../fonts/TTCommons-Regular.ttf) format("truetype");
+  font-family: "clean-ui";
+  src: url(../fonts/a.ttf) format("truetype");
   font-weight: normal;
 }
 html {
@@ -17,10 +17,10 @@ html {
 }
 body {
   font-size: 1.6px;
-  font-family: "TT Common", sans-serif;
+  font-family: "clean-ui", sans-serif;
 }
 p {
-  font-family: "TT Common", sans-serif;
+  font-family: "clean-ui", sans-serif;
   font-size: 2rem;
   line-height: 4rem;
   color: #464646;

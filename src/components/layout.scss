@@ -12,15 +12,10 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "sailec";
-  src: url(../fonts/Sailec-Light.ttf) format('truetype');
-  font-weight: normal;
-}
 
 @font-face {
-  font-family: "tt norms";
-  src: url(../fonts/tt-norms.ttf) format('truetype');
+  font-family: "clean-ui";
+  src: url(../fonts/a.ttf) format("truetype");
   font-weight: normal;
 }
 html {
@@ -30,13 +25,12 @@ html {
 }
 body {
  font-size: 1.6rem;
-font-family: 'tt norms', sans-serif;
+font-family: 'clean-ui', sans-serif;
  background-color: #fafafa;
  color: #363636;
  letter-spacing: .3px;
  line-height: 1.8;
  opacity: 0.9;
- 
 }
 .fade-in {
   animation: fadeIn ease .8s;
@@ -89,8 +83,8 @@ h2 {
 }
 p {
   margin-top: 2rem;
- font-family: 'sailec', sans-serif;
-  font-size: 1.55rem;
+ font-family: 'clean-ui', sans-serif;
+  font-size: 1.5rem;
 
   // letter-spacing: .05em;
 
@@ -262,7 +256,7 @@ transform: translateX(-50%);
 .menu-nav__link {
   color: #fff;
   padding: 1rem 2rem;
-  font-family: 'tt norms', sans-serif;;
+  font-family: 'clean-ui', sans-serif;;
 display: inline-block;
 text-decoration: none;
   font-size: 2rem;
@@ -347,7 +341,7 @@ text-decoration: none;
 .menu-nav__social {
   margin-top: 30%;
   padding: 1rem 2rem;
-  font-family: 'sailec', sans-serif;;
+  font-family: 'clean-ui', sans-serif;;
 display: inline-block;
 text-decoration: none;
   font-size: 2rem;
@@ -363,7 +357,7 @@ text-decoration: none;
   border: 0;
   margin: 5rem 0;
   overflow: hidden;
-  font-family: 'tt norms', sans-serif;
+  font-family: 'clean-ui', sans-serif;
   font-size: 1.6rem;
   color: #363636;
   text-decoration: none;
@@ -431,11 +425,9 @@ background-image: none;
 }
 .intro {
  
-  width: 80%;
+  width: 900px;
   height: 82px;
   top: 10rem;
-  
-  color: #000000;
 }
 .ani-box {
   width: 100%;
@@ -581,9 +573,7 @@ background-image: none;
     min-height: 200px; 
     align-items: center; }
 
-.intro__content {
-  width: 100%;
-}
+
 .greeting {
   display: inline-block;
   position: absolute;
@@ -603,8 +593,8 @@ background-image: none;
 
 }
 
-//RESPONSIVENESS 
-@media screen and ( max-width: 1850px) {
+//RESPONSIVENESS
+@media screen and ( max-width: 850px) {
 .menu-nav {
 right: 0%;
 }
@@ -613,6 +603,7 @@ right: 0%;
 }
 .menu-nav__link {
   display: block;
+  text-align: center;
 }
 
 .social__link {
