@@ -75,7 +75,7 @@ h1 {
 h2 {
   font-family: 'Canela', sans-serif;
   font-weight: 300 ;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #363636;
   line-height: 1.5;
   letter-spacing: 0.035rem;
@@ -374,7 +374,7 @@ text-decoration: none;
   justify-content: space-between;
   padding: 1.2rem 6rem;  
  
-  border: 0.12rem solid #efefef;
+  border: 0.2rem solid #efefef;
   width: 100%;
 }
 .btn__content::before {
@@ -596,7 +596,7 @@ background-image: none;
 //RESPONSIVENESS
 @media screen and ( max-width: 850px) {
 .menu-nav {
-right: 0%;
+right: 0;
 }
 .intro {
   width: 100%;
@@ -620,16 +620,41 @@ iframe {
 .c62 {
   max-width: 100% !important;
 }
-
+form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
 .form-group {
+  margin: 2rem 2rem 2rem 0;
 
 }
 .form-control {
-  padding: 2rem 3rem 2rem 0;
-  width: 100%;
+  padding: .5rem 3rem .5rem 0;
+  display: block;
+  width: 400px;
   outline: none;
+  line-height: 2.9;
   border: none;
+  font-size: 1.6rem;
   background: transparent;
-border-bottom: 1px solid #000;
+border-bottom: 1px solid #a2a2a2;
   font-family: "clean-ui", sans-serif;
+}
+textarea.form-control {
+  width: 820px;
+  margin: 2rem 0;
+  resize: none;
+}
+.form-control:focus {
+  border-bottom: 1px solid #000;
+  animation:0.2s cubic-bezier(1, 0, 0.58, 0.97) 1;
+
+}
+.message {
+  display: block;
+}
+button {
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 
 export const Contact = () => {
@@ -12,8 +13,8 @@ export const Contact = () => {
       </div>
       <section className="contact">
         <div className="container">
-          <div className="content">
-            <h1> Send me a message!</h1>
+          <div className="">
+            <h2> Send me a message!</h2>
             <p>Got a question or something interesting , or just want
               to say hello? Take a shot.</p>
             <form>
@@ -25,15 +26,22 @@ export const Contact = () => {
 
               <div className="form-group">
                 <label htmlFor="email"> Your Email</label>
-                <input type="email" name="email" placeholder="Enter your email address"/>
+                <input type="email" name="email" className="form-control" placeholder="Enter your email address"/>
 
               </div>
 
-              <div className="form-group">
+              <div className="form-group message">
                 <label htmlFor="message"> Your Message</label>
-                <textarea name="message" placeholder="Hi codekyd, I was wondering if you could ....."/>
+                <textarea name="message" className="form-control" placeholder="Hi, I was wondering if you could help us with X,...."/>
 
               </div>
+              <button type="submit" className="btn" style={{marginTop: '1rem'}}>
+                <div className="btn__content"> Send Message
+                  <div className="bounce">
+                    <svg width="20" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" className=" bow-arrow"><path fill="none" stroke="" stroke-width="5" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
+                  </div>
+                </div>
+              </button>
             </form>
           </div>
         </div>
