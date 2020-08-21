@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "clean-ui";
-  src: url(../fonts/a.ttf) format("truetype");
+  src:  url(../fonts/a.ttf) format("truetype");
   font-weight: normal;
 }
 html {
@@ -68,7 +68,7 @@ h1 {
   font-family: 'Canela', sans-serif;
   font-weight: 300 ;
   font-size: 6rem;
-  color: #363636;
+  color: #000000;
   line-height: 1.35;
   letter-spacing: 0.035rem;
 }
@@ -77,14 +77,14 @@ h2 {
   font-weight: 300 ;
   font-size: 5rem;
   color: #363636;
-  line-height: 1.35;
+  line-height: 1.5;
   letter-spacing: 0.035rem;
 
 }
 p {
   margin-top: 2rem;
  font-family: 'clean-ui', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 
   // letter-spacing: .05em;
 
@@ -557,7 +557,7 @@ background-image: none;
 }
 .container {
   
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto;
   padding: 2rem 4rem;
   width: 100%;
@@ -578,16 +578,16 @@ background-image: none;
   display: inline-block;
   position: absolute;
   text-rendering: geometricPrecision;
-  left: -22rem;
+  left: -19rem;
   height: 411px;
   top: 25rem;
-  // line-height: 1.2;
+   line-height: 1.8;
   font-family: 'Canela', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 33rem;
-  // line-height: 100px;
+  font-size: 30rem;
   color: rgba(0, 0, 0, 0.03);
+  padding-top: 4rem;
   z-index: -99;
   transform: rotate(90deg);
 
@@ -612,18 +612,24 @@ right: 0%;
 }
 
 
+iframe {
+  width: 100%;
+  border: 0;
+  height: 100%;
+}
+.c62 {
+  max-width: 100% !important;
+}
 
+.form-group {
 
-// @keyframes pulse {
-//   0% {
-//     transform: scale(.9) ;
-//   }
-//   70% {
-//     transform: scale(1) ;
-//   }
-//     100% {
-//       transform: scale(.9) ;
-//   }
-// }
-
-
+}
+.form-control {
+  padding: 2rem 3rem 2rem 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+border-bottom: 1px solid #000;
+  font-family: "clean-ui", sans-serif;
+}

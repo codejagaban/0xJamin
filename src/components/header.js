@@ -57,9 +57,9 @@ const   onMenuClick = () => {
   <li>
     <Link to="/" className="menu-nav__link">Home</Link>
     <Link to="/about" className="menu-nav__link">About</Link>
-    <Link to="/" className="menu-nav__link">Projects</Link>
-    <Link to="/" className="menu-nav__link">Resume</Link>
-    <Link to="/" className="menu-nav__link">Contact</Link>
+    <Link to="/works" className="menu-nav__link">works</Link>
+    <Link to="/trust-jamin.pdf" className="menu-nav__link">Resume</Link>
+    <Link to="/contact" className="menu-nav__link">Contact</Link>
   </li>
 
 
