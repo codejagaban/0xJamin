@@ -593,23 +593,6 @@ background-image: none;
 
 }
 
-//RESPONSIVENESS
-@media screen and ( max-width: 850px) {
-.menu-nav {
-right: 0;
-}
-.intro {
-  width: 100%;
-}
-.menu-nav__link {
-  display: block;
-  text-align: center;
-}
-
-.social__link {
-  padding: 1rem 0.7rem;
-}
-}
 
 
 iframe {
@@ -657,4 +640,28 @@ textarea.form-control {
 }
 button {
   cursor: pointer;
+}
+
+//RESPONSIVENESS
+@media screen and ( max-width: 850px) {
+  .menu-nav {
+    right: 0;
+  }
+  .intro {
+    width: 100%;
+  }
+  .menu-nav__link {
+    display: block;
+    text-align: center;
+  }
+
+  .social__link {
+    padding: 1rem 0.7rem;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .form-control, textarea.form-control{
+    width: 100% ;
+  }
 }
