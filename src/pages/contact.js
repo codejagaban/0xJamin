@@ -1,38 +1,73 @@
-import React from "react";
+import React, { useState} from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 
 export const Contact = () => {
+  const [state, setState] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+    setState({...state, [name]: value})
+  }
+
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+  }
+  const { name, email, message} = state;
   return(
     <Layout>
       <SEO title="Contact"/>
-      <div className="greeting" style={{lineHeight: '2.5', fontSize: '28rem'}}>
+      <div className="greeting" style={{lineHeight: '2.5', fontSize: '20rem'}}>
         Contact
       </div>
       <section className="contact">
         <div className="container">
-          <div className="">
             <h2> Send me a message!</h2>
             <p>Got a question or something interesting , or just want
               to say hello? Take a shot.</p>
-            <form>
+            <form onSubmit={handleFormSubmit}>
               <div className="form-group">
                 <label htmlFor="name"> Your Name</label>
-                <input type="text" name="name" className="form-control" placeholder="Enter your name"/>
+                <input
+                  type="text"
+                  name="name"
+                  className="form-control"
+                  value={name}
+                  placeholder="Enter your name"
+                  onChange={handleInputChange}/>
 
               </div>
 
               <div className="form-group">
                 <label htmlFor="email"> Your Email</label>
-                <input type="email" name="email" className="form-control" placeholder="Enter your email address"/>
+                <input
+                  type="email"
+                  name="email"
+                  className="form-control"
+                  value={email}
+                  placeholder="Enter your email address"
+                  onChange={handleInputChange}/>
 
               </div>
 
               <div className="form-group message">
                 <label htmlFor="message"> Your Message</label>
-                <textarea name="message" className="form-control" placeholder="Hi, I was wondering if you could help us with X,...."/>
+                <textarea
+                  name="message"
+                  className="form-control"
+                  value={message}
+                  placeholder="Hi, I was wondering if you could help us with X,...."
+                  onChange={handleInputChange}/>
 
               </div>
               <button type="submit" className="btn" style={{marginTop: '1rem'}}>
@@ -43,7 +78,6 @@ export const Contact = () => {
                 </div>
               </button>
             </form>
-          </div>
         </div>
       </section>
     </Layout>
