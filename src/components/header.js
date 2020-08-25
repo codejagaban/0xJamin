@@ -13,8 +13,7 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-     this.tween = gsap.to(".box", { height: "100%", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
-
+     this.tween = gsap.to(".box", { height: "100vh", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
   }
    onMenuClick = (e) => {
 
