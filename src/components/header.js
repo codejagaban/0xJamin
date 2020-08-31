@@ -56,9 +56,9 @@ class Header extends React.Component {
               </div>
               <button className={`menu`} onClick={(e) => {this.onMenuClick(e)}}
                       ref={(navRef) => { this.navRef = navRef; }}>
+
                 <div className="bar1"></div>
                 <div className="bar2"></div>
-                <div className="bar3"></div>
 
               </button>
 
@@ -70,10 +70,10 @@ class Header extends React.Component {
           <div className="menu-nav"
           ref={(boxRef) =>{ this.boxRef = boxRef}}>
             <div className="box-wrapper">
-              <div className="box box1"/>
-              <div className="box box2"/>
-              <div className="box box3"/>
-              <div className="box box4"/>
+              <div className={"box"}>
+
+              </div>
+
             </div>
 
 
@@ -126,7 +126,7 @@ class Header extends React.Component {
                 </Link>
                 <Link to="https://dribbble.com/codekyd" target="_blank" className="social__link">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-dribbble" width="24"
-                       height="24" viewBox="0 0 24 24" stroke-width="1.2" stroke="#fff" fill="none"
+                       height="24" viewBox="0 0 24 24" stroke-width="1.2" stroke="#505050" fill="none"
                        stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <circle cx="12" cy="12" r="9"/>

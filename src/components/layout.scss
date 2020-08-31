@@ -26,7 +26,7 @@ html {
 body {
  font-size: 1.6rem;
 font-family: 'clean-ui', sans-serif;
- background-color: #fafafa;
+ background-color: #F6F6F6;
  color: #363636;
  letter-spacing: .3px;
  line-height: 1.8;
@@ -119,51 +119,34 @@ nav {
 }
 
 
-.bar1, .bar2, .bar3 {
+.bar1, .bar2, {
   height: 2px;
-  background-color: #000000;
+  background-color: #505050;
   margin: 4px 0;
   z-index: 99999;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 .bar1 {
-  width: 2.5rem;
+  width: 4rem;
 }
 .bar2 {
-  width: 4rem;
+  width: 2rem;
 
 }
-.bar3 {
-  width: 1.5rem;
-  
-}
-.menu:hover .bar1,.menu:hover .bar2,.menu:hover .bar3 {
-  width: 4rem;
 
-
-
-}
 
 /* Rotate first bar */
 .menuChange .bar1 {
-  width: 3.5rem;
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
+  width: 3rem;
+  -webkit-transform: rotate(-45deg) translate(-12px, 10px);
+  transform: rotate(-45deg) translate(-12px, 10px);;
 }
 
-/* Fade out the second bar */
-.menuChange .bar2 {
-  opacity: 0;
-}
-
-.menuChange .bar1, .menuChange .bar3 {
-  background-color: #fff;
-}
 /* Rotate last bar */
-.menuChange .bar3 {
-  width: 3.5rem;
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+.menuChange .bar2{
+  width: 3rem;
+  -webkit-transform: rotate(45deg) translate(3px, 5px);
+  transform: rotate(45deg) translate(3px, 5px);
 }
 
 @keyframes bounce {
@@ -192,7 +175,7 @@ nav {
   z-index: 2;
   left: 0;
 
-  transition: 1s ease-in;
+  transition: .5s ease-in;
 }
 
 .menuChange.menu-nav {
@@ -209,9 +192,9 @@ nav {
 }
 
 .box {
-width: 25vw;
+width: 100vw;
   height: 0;
-background: #000;
+background: #ffffff;
 }
 
 //.box:nth-child(1) {
@@ -232,9 +215,8 @@ background: #000;
 }
 
 .menuChange .menu-nav__items {
-  color: #fff;
+  color: #505050;
   font-size: 3rem;
-
   display: inline-block;
   
   position: absolute;
@@ -246,7 +228,7 @@ background: #000;
 transform: translateX(-50%);
 }
 .menu-nav__link {
-  color: #fff;
+  color: #505050;
   padding: 1rem 2rem;
   font-family: 'clean-ui', sans-serif;;
 display: inline-block;
@@ -259,7 +241,7 @@ text-decoration: none;
   position: absolute;
   width: 100%;
   height: 1px;
-  background:#fff;
+  background:#505050;
   top:47%;
   animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
@@ -272,7 +254,7 @@ text-decoration: none;
   text-align: center;
 }
 .social__link {
-  color: #fff;
+  color: #505050;
   padding: 1rem 3rem;
 
 }
