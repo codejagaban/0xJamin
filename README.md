@@ -16,6 +16,6 @@ I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combinat
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codekyd&theme=dark&layout=compact)](https://github.com/codekyd/github-readme-stats)
-
+![Profile views](https://gpvc.arturio.dev/[codekyd])
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=codekyd&theme=dark&repo=academia-pub)](https://github.com/codekyd/github-readme-stats)
