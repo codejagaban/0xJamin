@@ -12,3 +12,10 @@ I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combinat
 
 </p>
 
+![Jamin's github stats](https://github-readme-stats.vercel.app/api?username=codekyd&theme=dark&show_icons=true)
+
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codekyd&theme=dark&layout=compact)](https://github.com/codekyd/github-readme-stats)
+
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=codekyd&theme=dark&repo=academia-pub)](https://github.com/codekyd/github-readme-stats)
