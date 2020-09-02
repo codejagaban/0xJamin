@@ -1,17 +1,14 @@
-/* -------------------------------------------------------------------------- */
-/*                            External Dependencies                           */
-/* -------------------------------------------------------------------------- */
+
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import {Link} from "gatsby";
 
-
-/* -------------------------- MansoryItem PropTypes ------------------------- */
 const propTypes = {
   item: PropTypes.object,
 };
 
-const MansoryItem = ({ item,  }) => {
+const MansoryItem = ({ item  }) => {
   const arrayRandomItem = (array) => {
     return  array[Math.floor(Math.random() * array.length | 0)]
   }
@@ -22,6 +19,8 @@ const MansoryItem = ({ item,  }) => {
         <>
           <ItemStyle
             {...{ item }}
+            href={item.link}
+            targer="_blank"
             style={{
               height: arrayRandomItem(['400px', '454px', '310px']),
             }}
@@ -31,7 +30,11 @@ const MansoryItem = ({ item,  }) => {
 
           >
             {/*Image here*/}
+
+            <img src={item.imageUrl} alt={item.title}/>
+
             <div>
+
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               {item.technologies && (
@@ -43,13 +46,17 @@ const MansoryItem = ({ item,  }) => {
                   ))}
                 </p>
               )}
+
             </div>
+
+
           </ItemStyle>
         </>
   )}
 
-const ItemStyle = styled.div`
+const ItemStyle = styled.a`
   margin: 0 0 1.5em;
+  text-decoration: none;
   position: relative;
   cursor: pointer;
   border-radius: 9px;
@@ -120,9 +127,9 @@ const ItemStyle = styled.div`
   }
   p {
     color: #d5d5d5 !important;
-    font-size: calc(var(--font-sm) + 0.9px);
+    font-size: 1.4rem;
     span {
-      background: #D0D0D0;
+      background: #fff;
       padding: 4px 10px;
       border-radius: 50px;
       text-transform: capitalize;
