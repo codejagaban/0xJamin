@@ -57,8 +57,8 @@ class Header extends React.Component {
               <button className={`menu`} onClick={(e) => {this.onMenuClick(e)}}
                       ref={(navRef) => { this.navRef = navRef; }}>
 
-                <div className="bar1"></div>
-                <div className="bar2"></div>
+                <div className="bar1"/>
+                <div className="bar2"/>
 
               </button>
 

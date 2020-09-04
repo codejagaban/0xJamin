@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "clean-ui";
-  src:  url(../fonts/gordita.otf) format("truetype");
+  src:  url(../fonts/gordita.ttf) format("truetype");
   font-weight: normal;
 }
 html {
@@ -26,7 +26,7 @@ html {
 body {
  font-size: 1.6rem;
 font-family: 'clean-ui', sans-serif;
- background-color: #F6F6F6;
+ background-color: #f7f7f7;
  color: #363636;
  letter-spacing: .3px;
  line-height: 1.8;
@@ -84,11 +84,13 @@ h2 {
 p {
   margin-top: 2rem;
  font-family: 'clean-ui', sans-serif;
-  font-size: 1.4rem
+  font-size: 1.5rem
   // letter-spacing: .05em;
 
 }
-
+.aniTop, .aniBottom {
+  opacity: 0;
+}
 header {
   position: relative;
 }
@@ -239,14 +241,28 @@ text-decoration: none;
 .menu-nav__link:before{
   content:'';
   position: absolute;
-  width: 100%;
   height: 1px;
   background:#505050;
   top:47%;
   animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 }
+.menu-nav__link:after {
+  content:'';
+  position: absolute;
+  height: 28px;
+  background:#efefef;
+  z-index: -9;
+  top:17%;
+  animation:outHalf 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+
 .menu-nav__link:hover:before{
   animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+
+.menu-nav__link:hover:after{
+  animation:inHalf 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 
 }
 .social {
@@ -283,6 +299,34 @@ text-decoration: none;
     right: 0;
   }
 }
+
+
+
+@keyframes inHalf {
+  0% {
+    width: 0;
+    left: 0;
+    right: auto;
+  }
+  100% {
+    left: 0;
+    right: auto;
+    width: 30%;
+  }
+}
+@keyframes outHalf {
+  0% {
+    width: 30%;
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
 @keyframes show {
   0% {
     opacity: 0;
@@ -294,23 +338,23 @@ text-decoration: none;
   }
 }
 .menu-nav__link:nth-child(1) {
-  animation: show 0.2s 1.1s ease 1 both;
+  animation: show 0.2s .7s ease 1 both;
 }
 
 .menu-nav__link:nth-child(2) {
-  animation: show 0.2s 1.2s ease 1 both;
+  animation: show 0.2s .8s ease 1 both;
 }
 
 .menu-nav__link:nth-child(3) {
-  animation: show 0.2s 1.3s ease 1 both;
+  animation: show 0.2s .9s ease 1 both;
 }
 
 .menu-nav__link:nth-child(4) {
-  animation: show 0.2s 1.4s ease 1 both;
+  animation: show 0.2s 1s ease 1 both;
 }
 
 .menu-nav__link:nth-child(5) {
-  animation: show 0.2s 1.5s ease 1 both;
+  animation: show 0.2s 1.1s ease 1 both;
 }
 .menu-nav__social {
   margin-top: 30%;
@@ -361,6 +405,7 @@ text-decoration: none;
     z-index: -1;
      border: 1rem solid #000;
     position: absolute;
+  padding: 10px;
     top: 0rem;  
     bottom: 0;
     left: -2rem;
@@ -389,6 +434,7 @@ background-image: none;
   transform: translateX(0);
   left: 0;
   height: 108%;
+  border: 0.2rem solid #000000;
   background-color: #000000;
 }
 .btn:hover .btn__content {
@@ -530,7 +576,6 @@ background-image: none;
   }
 }
 .container {
-  
   max-width: 110rem;
   margin: 0 auto;
   padding: 2rem 3rem;
@@ -546,7 +591,9 @@ background-image: none;
    margin: 10% 0;
     min-height: 200px; 
     align-items: center; }
-
+.text-center {
+  text-align: center;
+}
 
 .greeting {
   display: inline-block;
