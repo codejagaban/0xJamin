@@ -20,13 +20,15 @@ const MansoryItem = ({ item  }) => {
           <ItemStyle
             {...{ item }}
             href={item.link}
-            targer="_blank"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
-              height: arrayRandomItem(['400px', '454px', '310px']),
+              height: arrayRandomItem(['350px', '270px', '310px']),
             }}
             role="gridcell"
             id="cardHover"
             aria-label={`${item.title} ${item.description}`}
+            className={"aniBottom"}
 
           >
             {/*Image here*/}
@@ -77,6 +79,7 @@ const ItemStyle = styled.a`
     left: 0;
     top: 0;
     object-fit: cover;
+    transition: 1s ease-in-out;
   }
   &:before {
     content: '';
@@ -113,6 +116,9 @@ const ItemStyle = styled.a`
   &:hover {
     &:after {
       opacity: 1;
+    }
+    img {
+    transform: scale(1.03);
     }
     div {
       z-index: 999;

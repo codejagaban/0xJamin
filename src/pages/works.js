@@ -6,6 +6,7 @@ import gsap from "gsap"
 import MansoryLayout from "../components/Mansory/Index"
 import MansoryItem from "../components/Mansory/MansoryItem"
 import WorkData from "../components/Data/WorkData"
+import Button from "../components/Button/Button"
 
 class Works extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class Works extends React.Component {
         <div className="container">
           <h2 className="fromLeft">Works.</h2>
           <div className="">
-            <p className="fromLeft">Some of my previous works</p>
+            <p className="fromLeft">Some Things I've Built</p>
             <MansoryLayout>
               {WorkData.map((item, index) => (
                 <MansoryItem key={index} index={index} item={item} />
@@ -50,17 +51,9 @@ class Works extends React.Component {
 
             </MansoryLayout>
 
-            <Link to="/works" className="btn ">
-              <div className="btn__content">My Resume
-                <div className="bounce">
-                  <svg width="20" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg"
-                       className=" bow-arrow">
-                    <path fill="none" stroke="" stroke-width="5" stroke-miterlimit="0"
-                          d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path>
-                  </svg>
-                </div>
-              </div>
-            </Link>
+         <Button
+         linkTo={"/contact"}
+         content={"Impressed? Contact Me"}/>
 
           </div>
         </div>

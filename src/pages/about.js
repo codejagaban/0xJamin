@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../components/layout';
 import SEO from '../components/seo'
 import { Link } from "gatsby"
+import Button from "../components/Button/Button";
+import styled from 'styled-components';
 
 const About = () => {
     return (
@@ -13,15 +15,38 @@ const About = () => {
 
           <div className="container">
             <h2>About Me.</h2>
-            <div className="content">
-              <p>Some Contents About me</p>
-              <Link to="/works" className="btn ">
-                <div className="btn__content"> See My Projects
-                  <div className="bounce">
-                    <svg width="20" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg" className=" bow-arrow"><path fill="none" stroke="" stroke-width="5" stroke-miterlimit="0" d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8 9.8"></path></svg>
-                  </div>
-                </div>
-              </Link>
+            <div className="">
+              <p>Hello! </p>
+                <p>I'm Trust Jamin, a software engineer based in Nigeria.
+                I enjoy creating things that works on the web, whether that be
+                websites, applications, or anything
+                in between.
+              </p>
+
+             <StyledDiv>
+               <h2>   My goal is to always build scalable products that provide
+                 pixel-perfect, performant experiences.</h2>
+
+              <div>
+                <p>Here are a few technologies I've been working with recently:
+                </p>
+                <StyledList>
+                  <li>JavaScript (ES6+)</li>
+                  <li>HTML & (S)CSS</li>
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Redux</li>
+                  <li>Gatsby.js</li>
+                  <li>Next.js</li>
+                  <li>Material UI</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+
+                </StyledList>
+              </div>
+
+             </StyledDiv>
+              <Button linkTo="/works" content={"View Previous Works"}/>
 
             </div>
           </div>
@@ -29,4 +54,43 @@ const About = () => {
     )
 }
 
+const StyledList = styled.ul`
+list-style:none;
+margin-top: 10px;
+display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    overflow: hidden;
+    padding: 0px;
+    margin: 20px 0px 0px;
+position:relative;
+li {
+font-size: 14.5px;
+padding: 5px 5px 5px 15px;
+&:before {
+content: "▹";
+margin-right: 8px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 12px;
+}
+}
+`
+const StyledDiv = styled.div`
+display: flex;
+justify-content: space-between;
+
+  h2 {
+  width:50%;
+  font-size: 3.5rem;
+  padding: 2rem
+  }
+   @media (max-width: 989px) {
+ display: block;
+ h2 {
+ width: 100%;
+ padding: 1rem
+ }
+ }
+ 
+`
 export default About
