@@ -82,7 +82,7 @@ justify-content: space-between;
   h2 {
   width:50%;
   font-size: 3.5rem;
-  padding: 2rem
+  padding: 2rem 2rem 2rem 0
   }
    @media (max-width: 989px) {
  display: block;
