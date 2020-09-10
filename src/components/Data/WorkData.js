@@ -20,7 +20,7 @@ const WorkData = [
     title: 'GasHub',
     description: 'A GeoSpatial Representation of possible gas locations in Niger Delta.',
      link: 'https://gashub.netlify.app/',
-    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1598515400/Screenshot_from_2020-08-27_09-03-01_xblmme.png',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1599750043/Screenshot_from_2020-09-10_15-59-08_l4ornu.png',
     technologies: ['React', 'GeoJSON', 'Javascript',],
   },
   {
