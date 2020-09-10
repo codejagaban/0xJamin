@@ -45,7 +45,7 @@ componentDidMount() {
                    web easily
                    accessible for everyone.
                  </p>
-                 <p>Currently I'm fascinated about the ability to tell more with
+                 <p className="info">Currently I'm fascinated about the ability to tell more with
                    less (Minimalist Architecture and Designs).</p>
                  <Button linkTo="/about" content={"About Me"}/>
 
