@@ -10,8 +10,8 @@ const WorkData = [
   {
     title: 'MBBOV',
     description: 'A web-based microfinance banking system.',
-     link: 'https://mbbov.netlify.app/',
-    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/c_scale,w_1324/v1598515308/Screenshot_from_2020-08-27_08-59-51_wsdxpk.png',
+     link: 'https://mbbov.netlify.app/loans/education',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1599665522/Screenshot_from_2020-09-09_16-31-25_kijlpq.png',
     technologies: ['React', 'Javascript', 'HTML', 'CSS & SASS',],
   },
 
