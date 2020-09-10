@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React  from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import Button from "../components/Button/Button"
-import gsap from "gsap"
+
 
 
 export const Contact = () => {

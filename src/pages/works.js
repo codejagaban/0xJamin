@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import gsap from "gsap"
 import MansoryLayout from "../components/Mansory/Index"
 import MansoryItem from "../components/Mansory/MansoryItem"
@@ -43,7 +42,7 @@ class Works extends React.Component {
         <div className="container">
           <h2 className="fromLeft">Works.</h2>
           <div className="">
-            <p className="fromLeft">Some Things I've Built</p>
+            <p className="fromLeft">Some projects I've worked on</p>
             <MansoryLayout>
               {WorkData.map((item, index) => (
                 <MansoryItem key={index} index={index} item={item} />
@@ -53,7 +52,7 @@ class Works extends React.Component {
 
          <Button
          linkTo={"/contact"}
-         content={"Impressed? Contact Me"}/>
+         content={" Contact Me"}/>
 
           </div>
         </div>

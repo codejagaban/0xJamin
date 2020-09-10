@@ -436,6 +436,7 @@ background-image: none;
 }
 .btn:hover .btn__content {
   color: #f3f3f3;
+  border: 0.1rem solid transparent;
 }
 .btn:hover svg {
   stroke: #f3f3f3;

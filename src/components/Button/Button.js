@@ -1,10 +1,11 @@
 import React from "react"
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link } from "gatsby"
 
 const propTypes = {
   linkTo: PropTypes.string,
+  content: PropTypes.string,
+  type: PropTypes.string
 };
 
 const Button = ({ linkTo, content, type }) => {
@@ -43,8 +44,8 @@ const Button = ({ linkTo, content, type }) => {
                  className=" bow-arrow">
               <path fill="none"
                     stroke=""
-                    stroke-width="5"
-                    stroke-miterlimit="0"
+                    strokeWidth="5"
+                    strokeMiterlimit="0"
                     d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8
                                 9.8">
 
@@ -56,5 +57,7 @@ const Button = ({ linkTo, content, type }) => {
     )
   }
 }
+
+Button.propTypes = propTypes;
 
 export default Button

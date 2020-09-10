@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout';
 import SEO from '../components/seo'
-import { Link } from "gatsby"
 import Button from "../components/Button/Button";
 import styled from 'styled-components';
 
@@ -38,9 +37,14 @@ const About = () => {
                   <li>Redux</li>
                   <li>Gatsby.js</li>
                   <li>Next.js</li>
+                  <li>Jest</li>
                   <li>Material UI</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
+                  <li>RESTful APIs</li>
+                  <li>ARIA</li>
+                  <li>WCAG</li>
+
 
                 </StyledList>
               </div>

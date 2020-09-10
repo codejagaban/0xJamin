@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from 'gatsby';
 import gsap from 'gsap'
 import Button from "../components/Button/Button"
  class IndexPage extends Component {
@@ -41,10 +40,13 @@ componentDidMount() {
                    Trust Jamin Okpukoro
                  </h1>
                  <p className="info">Frontend developer who loves the artistic
-                   combination of code and design,currently trying out
-                   minimalist designs (honestly it's coming out really good).
+                   combination of code and design, I like building user centered
+                   applications so I am passionate in making the
+                   web easily
+                   accessible for everyone.
                  </p>
-                 <p></p>
+                 <p>Currently I'm fascinated about the ability to tell more with
+                   less (Minimalist Architecture and Designs).</p>
                  <Button linkTo="/about" content={"About Me"}/>
 
                </div>
