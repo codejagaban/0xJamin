@@ -8,15 +8,12 @@ import Img from "gatsby-image"
  * `useStaticQuery`, which allows us to load the image from directly within this
  * component, rather than having to pass the image data down from pages.
  *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "codekyd-dark.png" }) {
+      placeholderImage: file(relativePath: { eq: "images/codekyd-dark.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

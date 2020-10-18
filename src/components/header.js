@@ -1,48 +1,43 @@
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Image from './image';
 import gsap from "gsap"
 
-const data = useStaticQuery(graphql`
+
+const Header  = () => {
+  //Query from graphQL for CV
+  const data = useStaticQuery(graphql`
   query {
     resume: file(relativePath: { eq: "docs/trust-jamin.pdf" }){
       publicURL
   }
 }
 `)
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.navRef = React.createRef();
-    this.boxRef = React.createRef();
-    this.tween = null;
-  }
+console.log(data);
+// create refs for navigation
+  const navRef = useRef();
+  const boxRef = useRef();
+  let tween = null
 
-  componentDidMount() {
-     this.tween = gsap.to(".box", { height: "100vh", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
-  }
-   onMenuClick = (e) => {
-
-
-    if(!this.navRef.classList.contains('menuChange')) {
-      this.tween.play()
-      this.navRef.classList.add("menuChange");
-      this.boxRef.classList.add("menuChange");
-
-    }else  {
-      e.stopPropagation();
-      this.tween.reverse()
-      this.navRef.classList.remove('menuChange')
-      this.boxRef.classList.remove('menuChange')
+  useEffect(() => {
+    tween = gsap.to(".box", { height: "100vh", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
+  }, [])
+   const onMenuClick = (e) => {
+      // tween.play()
+      const navClass = navRef.current.classList
+      const boxClass = boxRef.current.classList
+      if(!navClass.contains('menuChange')) {
+        tween.play()
+        navClass.add("menuChange");
+        boxClass.add("menuChange");
+      }else  {
+        tween.reverse()
+        navClass.remove("menuChange");
+        boxClass.remove("menuChange");
+      }
 
     }
-
-
-  }
-  render() {
-
-
 
 
     return (
@@ -63,8 +58,8 @@ class Header extends React.Component {
               </div>
               <button className={`menu`}
                       aria-label="menu"
-                      onClick={(e) => {this.onMenuClick(e)}}
-                      ref={(navRef) => { this.navRef = navRef; }}>
+                      onClick={onMenuClick}
+                      ref={navRef}>
 
                 <div className="bar1"/>
                 <div className="bar2"/>
@@ -76,7 +71,7 @@ class Header extends React.Component {
           </div>
 
           <div className="menu-nav"
-          ref={(boxRef) =>{ this.boxRef = boxRef}}>
+          ref={boxRef}>
             <div className="box-wrapper">
               <div className={"box"}>
 
@@ -90,7 +85,9 @@ class Header extends React.Component {
                 <Link to="/" className="menu-nav__link">Home</Link>
                 <Link to="/about" className="menu-nav__link">About</Link>
                 <Link to="/works" className="menu-nav__link">works</Link>
-                <Link to={data.query.resume.publicURL} className="menu-nav__link">Resume</Link>
+                <a href={data.resume.publicURL}
+                    rel="noopener noreferrer"
+                    target="_blank" className="menu-nav__link">Resume</a>
                 <Link to="/contact" className="menu-nav__link">Contact</Link>
               </li>
 
@@ -167,7 +164,6 @@ class Header extends React.Component {
         </header>
       </>
     )
-  }
 }
 
 Header.propTypes = {
