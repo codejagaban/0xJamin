@@ -1,9 +1,16 @@
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Image from './image';
 import gsap from "gsap"
 
+const data = useStaticQuery(graphql`
+  query {
+    resume: file(relativePath: { eq: "docs/trust-jamin.pdf" }){
+      publicURL
+  }
+}
+`)
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -83,7 +90,7 @@ class Header extends React.Component {
                 <Link to="/" className="menu-nav__link">Home</Link>
                 <Link to="/about" className="menu-nav__link">About</Link>
                 <Link to="/works" className="menu-nav__link">works</Link>
-                <Link to="/trust-jamin.pdf" className="menu-nav__link">Resume</Link>
+                <Link to={data.query.resume.publicURL} className="menu-nav__link">Resume</Link>
                 <Link to="/contact" className="menu-nav__link">Contact</Link>
               </li>
 
