@@ -11,10 +11,9 @@ import Button from "../components/Button/Button"
    }
 componentDidMount() {
   this.fromRight = gsap.fromTo(".name",
-    { x: "-10rem", opacity: 0 }, {
-    x: "0rem", opacity: 1,
-    ease: "slow(0.7, 0.7," +
-      " false)", delay: .3, duration: 1
+    { x: "-10rem", display: "none" }, {
+    x: "0rem", display: "block",
+    ease: "slow(0.7, 0.7, false)", delay: .3, duration: 1
   });
 
   this.fromBottom = gsap.fromTo(".info",
