@@ -17,7 +17,6 @@ const MansoryItem = ({ item  }) => {
 
         <>
           <ItemStyle
-            {...{ item }}
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
@@ -27,7 +26,7 @@ const MansoryItem = ({ item  }) => {
             role="gridcell"
             id="cardHover"
             aria-label={`${item.title} ${item.description}`}
-            className={"aniBottom"}
+            className={"fromBottom"}
 
           >
             {/*Image here*/}
@@ -89,27 +88,20 @@ const ItemStyle = styled.a`
     right: 0px;
     bottom: 0px;
     left: 0px;
- 
   }
   &:after {
     content: '';
     pointer-events: none;
     position: absolute;
-   
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     opacity: 0.3;
-    /* background: linear-gradient(
-      191deg,
-      rgba(0, 0, 0, 0.1) 20%,
-      rgba(0, 0, 0, 0.76) 100%
-    ); */
     background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.1) 10%,
-      rgb(0 0 0 / 78%) 80%
+      191deg,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.76) 100%
     );
   }
   &:hover {
@@ -121,13 +113,12 @@ const ItemStyle = styled.a`
     }
     div {
       z-index: 999;
-      transform: none;
-      opacity: 1;
-    }
+    transform: none;
+    opacity: 1;
+}
   }
   h3 {
     color: #fff;
-    font-size: var(--font-x-md);
     font-weight: 800;
   }
   p {
@@ -140,7 +131,7 @@ const ItemStyle = styled.a`
       text-transform: capitalize;
       font-size: 1.1rem;
       margin-right: 6px;
-      color: #1A2323;
+      color: #000;
       font-weight: 700;
     }
   }
@@ -148,10 +139,6 @@ const ItemStyle = styled.a`
     opacity: 0;
     transform: translateY(10%);
     transition: opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s;
-    /* &:hover {
-            transform: none;
-            opacity: 1;
-        } */
   }
   @media (max-width: 585px) {
     &:after {

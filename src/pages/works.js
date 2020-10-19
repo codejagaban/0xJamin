@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import gsap from "gsap"
 import MansoryLayout from "../components/Mansory/Index"
 import MansoryItem from "../components/Mansory/MansoryItem"
-import WorkData from "../components/Data/WorkData"
+import workData from "../data/workData"
 import Button from "../components/Button/Button"
 
 class Works extends React.Component {
@@ -44,7 +44,7 @@ class Works extends React.Component {
           <div className="">
             <p className="fromLeft">Some projects I've worked on</p>
             <MansoryLayout>
-              {WorkData.map((item, index) => (
+              {workData.map((item, index) => (
                 <MansoryItem key={index} index={index} item={item} />
               ))}
 
