@@ -66,7 +66,7 @@ const ItemStyle = styled.a`
   background-repeat: no-repeat;
   overflow: hidden;
   padding: 1.4rem 2rem;
-  display: flex;
+  display: none;
   align-items: flex-end;
   border-radius: 9px;
   break-inside: avoid;

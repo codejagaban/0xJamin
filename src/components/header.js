@@ -21,7 +21,10 @@ console.log(data);
   let tween = null
 
   useEffect(() => {
-    tween = gsap.to(".box", { height: "100vh", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
+    const animate = () => {
+       tween = gsap.to(".box", { height: "100vh", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
+    }
+    return animate()
   }, [])
    const onMenuClick = (e) => {
       // tween.play()

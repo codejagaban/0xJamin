@@ -15,15 +15,15 @@ class Works extends React.Component {
   }
   componentDidMount() {
     this.fromLeft = gsap.fromTo(".fromLeft",
-      { x: "-10rem", opacity: 0 }, {
-      x: "0rem", opacity: 1,
+      { x: "-10rem", display: "none" }, {
+      x: "0rem", display: "flex",
       ease: "slow(0.7, 0.7," +
         " false)", delay: .3, duration: 1
     });
 
     this.fromBottom = gsap.fromTo(".fromBottom",
-      { y: "5rem", opacity: 0 }, {
-      y: "0rem", opacity: 1,
+      { y: "5rem", display: "none"}, {
+      y: "0rem", display: 'flex',
       ease: "power4.out", delay: .5, duration: 1.5,stagger: .4
     });
 
