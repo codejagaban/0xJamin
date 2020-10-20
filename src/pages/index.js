@@ -9,19 +9,19 @@ import Button from "../components/Button/Button"
      this.fromLeft = null;
      this.fromBottom = null;
    }
-componentDidMount() {
-  this.fromRight = gsap.fromTo(".name",
-    { x: "-10rem", display: "none" }, {
-    x: "0rem", display: "block",
-    ease: "slow(0.7, 0.7, false)", delay: .3, duration: 1
-  });
+// componentDidMount() {
+//   this.fromRight = gsap.fromTo(".name",
+//     { x: "-10rem", display: "none" }, {
+//     x: "0rem", display: "block",
+//     ease: "slow(0.7, 0.7, false)", delay: .3, duration: 1
+//   });
 
-  this.fromBottom = gsap.fromTo(".info",
-    { y: "5rem", opacity: 0 }, {
-    y: "0rem", opacity: 1,
-    ease: "power4.out", delay: .5, duration: 1.5,stagger: .4
-  });
-}
+//   this.fromBottom = gsap.fromTo(".info",
+//     { y: "5rem", opacity: 0 }, {
+//     y: "0rem", opacity: 1,
+//     ease: "power4.out", delay: .5, duration: 1.5,stagger: .4
+//   });
+// }
 
    render() {
      return (
@@ -35,19 +35,19 @@ componentDidMount() {
              <div className="content">
                <div className="intro__content">
                  <p className="toast__content">Hi, I'm</p>
-                 <h1 className="name">
+                 <h1 className="aniLeft">
                    Trust Jamin Okpukoro
                  </h1>
-                 <p className="info">Frontend developer who loves the artistic
+                 <p className="aniBottom">Frontend developer who loves the artistic
                    combination of code and design, I like building user centered
                    applications so I am passionate in making the
                    web easily
                    accessible for everyone.
                  </p>
-                 <p className="info">Currently I'm fascinated about the ability
+                 <p className="aniBottom">Currently I'm fascinated about the ability
                    to tell more with
                    less (Minimalist Architecture and Designs).</p>
-                 <Button linkTo="/about" content={"About Me"}/>
+                 <Button linkTo="/about"  content={"About Me"}/>
 
                </div>
 

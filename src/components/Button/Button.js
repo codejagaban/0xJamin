@@ -34,7 +34,7 @@ const Button = ({ linkTo, content, type }) => {
     )
   }else  {
     return (
-      <Link to={linkTo} className="btn info">
+      <Link to={linkTo} className="btn aniBottom">
         <div className="btn__content"> { content}
           <div className="bounce">
             <svg width="20"

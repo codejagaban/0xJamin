@@ -26,7 +26,7 @@ const MansoryItem = ({ item  }) => {
             role="gridcell"
             id="cardHover"
             aria-label={`${item.title} ${item.description}`}
-            className={"fromBottom"}
+            className="aniBottom"
 
           >
             {/*Image here*/}
@@ -66,7 +66,7 @@ const ItemStyle = styled.a`
   background-repeat: no-repeat;
   overflow: hidden;
   padding: 1.4rem 2rem;
-  display: none;
+  display: flex;
   align-items: flex-end;
   border-radius: 9px;
   break-inside: avoid;

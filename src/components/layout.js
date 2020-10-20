@@ -19,16 +19,21 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const animate = () => {
       gsap.fromTo(".aniTop",
-        { y: "-5rem", display: "none" }, {
-          y: "0rem", display: "block",
-          ease: "power4.out", delay: .5, duration: 1.5,stagger: .4
+        { y: "-5rem", opacity: 0,autoAlpha: 0 }, {
+          y: "0rem",  autoAlpha: 1,
+          ease: "power4.out", delay: .5, duration: 1,stagger: .2
         });
 
       gsap.fromTo(".aniBottom",
-        { y: "5rem", display: "none" }, {
-          y: "0rem", display: "block",
-          ease: "power4.out", delay: .5, duration: 1.5,stagger: .4
+        { y: "5rem", opacity: 0,autoAlpha: 0 }, {
+          y: "0rem",  autoAlpha: 1,
+          ease: "power4.out", delay: .5, duration: 1,stagger: .4
         });
+        gsap.fromTo(".aniLeft",
+        { x: "-10rem",opacity: 0,autoAlpha: 0 }, {
+        x: "0rem",  autoAlpha: 1,
+        ease: "slow(0.7, 0.7, false)", delay: .3, duration: 1
+      });
     }
     return animate()
   }, [])

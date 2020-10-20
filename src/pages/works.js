@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import gsap from "gsap"
+import SEO from "../components/seo";
 import MansoryLayout from "../components/Mansory/Index"
 import MansoryItem from "../components/Mansory/MansoryItem"
 import workData from "../data/workData"
@@ -12,21 +11,6 @@ class Works extends React.Component {
     super(props);
     this.fromLeft = null;
     this.fromBottom = null;
-  }
-  componentDidMount() {
-    this.fromLeft = gsap.fromTo(".fromLeft",
-      { x: "-10rem", display: "none" }, {
-      x: "0rem", display: "flex",
-      ease: "slow(0.7, 0.7," +
-        " false)", delay: .3, duration: 1
-    });
-
-    this.fromBottom = gsap.fromTo(".fromBottom",
-      { y: "5rem", display: "none"}, {
-      y: "0rem", display: 'flex',
-      ease: "power4.out", delay: .5, duration: 1.5,stagger: .4
-    });
-
   }
 
   render() {
@@ -40,9 +24,9 @@ class Works extends React.Component {
 
         </div>
         <div className="container">
-          <h2 className="fromLeft">Works.</h2>
+          <h2 className="aniLeft">Works.</h2>
           <div className="">
-            <p className="fromLeft">Some projects I've worked on</p>
+            <p className="aniLeft">Some projects I've worked on</p>
             <MansoryLayout>
               {workData.map((item, index) => (
                 <MansoryItem key={index} index={index} item={item} />
