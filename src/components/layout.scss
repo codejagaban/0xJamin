@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: "clean-ui";
-  src:  url(../fonts/gordita.ttf) format("truetype");
+  src:  url(../fonts/gordita.woff) format("woff");
   font-weight: normal;
 }
 html {
@@ -85,8 +85,9 @@ p {
   // letter-spacing: .05em;
 
 }
-.name, .aniTop, .aniBottom {
-  display: none;
+// make all animated contents hidden initially
+.name, .aniTop, .info, .aniBottom {
+  visibility: hidden;
 }
 header {
   position: relative;
