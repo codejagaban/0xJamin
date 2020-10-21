@@ -86,7 +86,7 @@ p {
 
 }
 // make all animated contents hidden initially
-.name, .aniTop, .info, .aniBottom {
+.aniLeft, .aniTop, .aniRight, .aniBottom {
   visibility: hidden;
 }
 header {
