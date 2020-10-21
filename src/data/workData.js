@@ -3,7 +3,7 @@ const workData = [
     title: 'Academia Publishing',
     description: 'A  publishing platform for academic journals and articles',
     link: 'https://academiapublishing.netlify.app/',
-    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1598515055/Screenshot_from_2020-08-27_08-27-47_zwp6cz.png',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1603257617/Screenshot_from_2020-10-21_06-17-09_eyxmxh.png',
     technologies: ['React','Redux', 'Javascript', 'Gatsby', 'GraphQL']
   },
 
