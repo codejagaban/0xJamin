@@ -24,13 +24,12 @@ html {
   overflow-x: hidden;
 }
 body {
- font-size: 1.6rem;
+ font-size: 1.8rem;
 font-family: 'clean-ui', sans-serif;
- background-color: #f7f7f7;
- color: #363636;
+ background-color: #ffffff;
+ color: #464646;
  letter-spacing: .3px;
- line-height: 1.8;
- opacity: 0.9;
+ line-height: 1.5;
 }
 .fade-in {
   animation: fadeIn ease .8s;
@@ -43,22 +42,18 @@ font-family: 'clean-ui', sans-serif;
   0% {opacity:0;}
   100% {opacity:1;}
   }
-  
   @-moz-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
   }
-  
   @-webkit-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
   }
-  
   @-o-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
   }
-  
   @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
@@ -72,8 +67,8 @@ h1 {
 }
 h2 {
   font-weight: 300 ;
-  font-size: 4rem;
-  color: #363636;
+  font-size: 5rem;
+  color: #464646;
   line-height: 1.5;
   letter-spacing: 0.035rem;
 
@@ -81,7 +76,7 @@ h2 {
 p {
   margin-top: 2rem;
  font-family: 'clean-ui', sans-serif;
-  font-size: 1.6rem
+  font-size: 1.8rem
   // letter-spacing: .05em;
 
 }
@@ -233,7 +228,7 @@ transform: translateX(-50%);
   font-family: 'clean-ui', sans-serif;;
 display: inline-block;
 text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .menu-nav__link:before{
@@ -374,8 +369,8 @@ text-decoration: none;
   margin: 5rem 0;
   overflow: hidden;
   font-family: 'clean-ui', sans-serif;
-  font-size: 1.4rem;
-  color: #363636;
+  font-size: 1.6rem;
+  color: #464646;
   text-decoration: none;
   outline: none;
   display: inline-block;

@@ -16,7 +16,7 @@ const About = () => {
             <h2>About Me.</h2>
             <div className="">
               <p>Hello! </p>
-                <p>I'm Trust Jamin, a software engineer based in Nigeria.
+                <p>I'm Trust Jamin, a Software Engineer based in Nigeria.
                 I enjoy creating things that works on the web, whether that be
                 websites, applications, or anything
                 in between.
@@ -68,7 +68,7 @@ display: grid;
     margin: 20px 0px 0px;
 position:relative;
 li {
-font-size: 14.5px;
+font-size: 1.8rem;
 padding: 5px 5px 5px 15px;
 &:before {
 content: "▹";
@@ -85,7 +85,7 @@ justify-content: space-between;
 
   h2 {
   width:50%;
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding: 2rem 2rem 2rem 0
   }
    @media (max-width: 989px) {
