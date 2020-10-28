@@ -96,7 +96,7 @@ console.log(data);
 
 
               <li className="social">
-                <Link to="https://twitter.com/codekyd"
+                <Link to="https://twitter.com/codejagaban"
                       rel="noopener noreferrer"
                       target="_blank" className="social__link">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -107,7 +107,7 @@ console.log(data);
                   </svg>
 
                 </Link>
-                <Link to="https://github.com/codekyd"
+                <Link to="https://github.com/codejagaban"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="social__link">
