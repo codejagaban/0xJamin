@@ -22,7 +22,8 @@ console.log(data);
 
   useEffect(() => {
     const animate = () => {
-       tween = gsap.to(".box", { height: "100vh", duration: .4, transformOrigin: "bottom", stagger: .3,paused: true });
+       tween = gsap.to(".box", { height: "100vh", duration: .4,
+       transformOrigin: "bottom", stagger: .3,paused: true });
     }
     return animate()
   }, [])
