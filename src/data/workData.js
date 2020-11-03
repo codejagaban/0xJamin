@@ -30,6 +30,14 @@ const workData = [
     technologies: ['React', 'Redux', 'TypeScript',"APIs", "HTML", "CSS & SASS", "Javascript"]
   },
   {
+    title: 'MoolahVest',
+    description: 'A platform to apply for a a loan, an investment plan,airtime and bill payments on the go',
+    link: 'https://www.moolahvest.com/',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1604395342/Screenshot_from_2020-11-03_10-05-29_xdsybf.png',
+    technologies: ['TypeScript', 'Material Design', 'Angular', 'HTML5', 'SASS', 'APIs']
+
+  },
+  {
     title: 'Intellect Scientific Information',
     description: 'A multi-disciplinary bibliographic database service for academic Journals.',
      link: 'http://intellectscientificinformation.com/',
