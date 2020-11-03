@@ -6,8 +6,6 @@ import MansoryItem from "../components/Mansory/MansoryItem"
 import workData from "../data/workData"
 import Button from "../components/Button/Button"
 
-import React from 'react'
-
 const Works = () => {
 	return (
 		<Layout>
