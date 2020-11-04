@@ -21,7 +21,7 @@ const MansoryItem = ({ item  }) => {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              height: arrayRandomItem(['350px', '270px', '310px']),
+              height: arrayRandomItem(['300px', '400px', '280px','480px']),
             }}
             role="gridcell"
             id="cardHover"

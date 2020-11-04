@@ -25,13 +25,13 @@ const workData = [
   {
     title: 'Algorithm Analysis',
     description: 'A subscription based  indexed database for research and academic articles',
-    link: 'https://algorithm-analysis.netlify.app/',
+    link: 'https://algorithm-analysis.now.sh/',
     imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1599069660/Screenshot_from_2020-09-02_19-00-00_benuib.png',
     technologies: ['React', 'Redux', 'TypeScript',"APIs", "HTML", "CSS & SASS", "Javascript"]
   },
   {
     title: 'MoolahVest',
-    description: 'A platform to apply for a a loan, an investment plan,airtime and bill payments on the go',
+    description: 'A platform to apply for a loan, an investment plan,airtime and bill payments on the go',
     link: 'https://www.moolahvest.com/',
     imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1604395342/Screenshot_from_2020-11-03_10-05-29_xdsybf.png',
     technologies: ['TypeScript', 'Material Design', 'Angular', 'HTML5', 'SASS', 'APIs']
