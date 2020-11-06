@@ -26,7 +26,6 @@ module.exports = {
         icon: `src/images/codekyd-dark.png`, // This path is relative to the root of the site.
       },
     },
-  
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

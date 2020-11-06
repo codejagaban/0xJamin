@@ -9,13 +9,10 @@ import Button from "../components/Button/Button"
 const Works = () => {
 	return (
 		<Layout>
-        <SEO title="Works"/>
-        <div className="greeting">
-          Works
-
-        </div>
-        <div className="container">
-          <h2 className="aniLeft">Works.</h2>
+            <SEO title="Works"/>
+            <div className="greeting">Works</div>
+            <div className="container">
+                <h2 className="aniLeft">Works.</h2>
           <div className="">
             <p className="aniLeft">Some projects I've worked on</p>
             <MansoryLayout>
