@@ -52,7 +52,7 @@ console.log(data);
           <div className="container">
             <nav>
               <div className="nav-logo" style={{ width: "80px" }}>
-                <Link to="/">
+                <Link to="/" activeClassName="active">
                   <Image />
                 </Link>
               </div>
@@ -86,13 +86,13 @@ console.log(data);
 
             <ul className="menu-nav__items">
               <li>
-                <Link to="/" className="menu-nav__link">Home</Link>
-                <Link to="/about" className="menu-nav__link">About</Link>
-                <Link to="/works" className="menu-nav__link">works</Link>
+                <Link activeClassName="active" to="/" className="menu-nav__link">Home</Link>
+                <Link activeClassName="active" to="/about" className="menu-nav__link">About</Link>
+                <Link activeClassName="active" to="/works" className="menu-nav__link">works</Link>
                 <a href={data.resume.publicURL}
                     rel="noopener noreferrer"
                     target="_blank" className="menu-nav__link">Resume</a>
-                <Link to="/contact" className="menu-nav__link">Contact</Link>
+                <Link activeClassName="active" to="/contact" className="menu-nav__link">Contact</Link>
               </li>
 
 
