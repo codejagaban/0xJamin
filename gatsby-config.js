@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Trust Jamin Okpukoro`,
-        short_name: `codekyd`,
+        short_name: `codejagaban`,
         start_url: `/`,
         display: `minimal-ui`,
         icon: `src/images/codekyd-dark.png`, // This path is relative to the root of the site.

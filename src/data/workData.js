@@ -44,6 +44,20 @@ const workData = [
     imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1598514780/Screenshot_from_2020-08-27_08-52-16_aqrybe.png',
     technologies: ['React', 'Redux', 'Javascript', 'APIs'],
   },
+  {
+    title: 'Bhanek Inn',
+    description: 'An hotel booking platform for making reservations and making payments online.',
+    link: 'http://bhanekinn.com/',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1605382528/Screenshot_from_2020-11-14_19-51-00_c2uufl.png',
+    technologies: ['React', 'Next.js', 'Context APIs', 'Javascript', 'APIs'],
+  },
+  {
+    title: 'Oxford Editors',
+    description: 'An  article editing as a service platform with online payment features.',
+    link: 'https://oxfordeditors.org/',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1605383935/Screenshot_from_2020-11-14_20-57-35_onkrnh.png',
+    technologies: ['React','SASS','Javascript', 'APIs'],
+  },
   ]
 
 
