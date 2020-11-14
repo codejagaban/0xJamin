@@ -5,45 +5,45 @@ import Button from "../components/Button/Button";
 import styled from 'styled-components';
 
 const About = () => {
-return (
-	<Layout>
-		<SEO title="About Me"  />
-		<div className="greeting">About</div>
-		<div className="container">
-			<h2>About Me.</h2>
-				<p>Hello! </p>
-				<p>I'm Trust Jamin, a Software Engineer based in Nigeria.
-				I enjoy creating things that works on the web, whether that be
-				websites, applications, or anything
-				in between.
-				</p>
-				<StyledDiv>
-					<h2>My goal is to always build scalable products that provide
-					pixel-perfect, performant experiences.
-					</h2>
-					<div>
-						<p>Here are a few technologies I've been working with recently:</p>
-						<StyledList>
-							<li>JavaScript (ES6+)</li>
-							<li>HTML & (S)CSS</li>
-							<li>React</li>
-							<li>TypeScript</li>
-							<li>Redux</li>
-							<li>Gatsby.js</li>
-							<li>Next.js</li>
-							<li>Jest</li>
-							<li>Material UI</li>
-							<li>Node.js</li>
-							<li>Express.js</li>
-							<li>RESTful APIs</li>
-							<li>ARIA</li>
-							<li>WCAG</li>
-						</StyledList>
-					</div>
-				</StyledDiv>
-				<Button linkTo="/works" content={"View Previous Works"}/>
-		</div>
-	</Layout>
+  return (
+    <Layout>
+      <SEO title="About Me" />
+      <div className="greeting">About</div>
+      <div className="container">
+        <h2>About Me.</h2>
+        <p>Hello! </p>
+        <p>I'm Trust Jamin, a Software Engineer based in Nigeria.
+        I enjoy creating things that works on the web, whether that be
+        websites, applications, or anything
+        in between.
+        </p>
+        <StyledDiv>
+          <h2>My goal is to always build scalable products that provide
+          pixel-perfect, performant experiences.
+          </h2>
+          <div>
+            <p>Here are a few technologies I've been working with recently:</p>
+            <StyledList>
+                <li>JavaScript (ES6+)</li>
+                <li>HTML & (S)CSS</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Redux</li>
+                <li>Gatsby.js</li>
+                <li>Next.js</li>
+                <li>Jest</li>
+                <li>Material UI</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>RESTful APIs</li>
+                <li>ARIA</li>
+                <li>WCAG</li>
+                        </StyledList>
+                    </div>
+                </StyledDiv>
+                <Button linkTo="/works" content={"View Previous Works"}/>
+        </div>
+    </Layout>
 )
 }
 

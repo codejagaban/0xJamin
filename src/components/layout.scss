@@ -575,14 +575,16 @@ text-decoration: none;
 
 }
 
-.content { display: flex;
+.content {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; 
   width: 100%; 
    margin: 10% 0;
-    min-height: 200px; 
-    align-items: center; }
+  min-height: 200px;
+  padding: 1.5rem;
+  align-items: center; }
 .text-center {
   text-align: center;
 }
@@ -715,6 +717,9 @@ button {
   }
   .form-control, textarea.form-control{
     width: 100% ;
+  }
+  .container {
+    padding: 2rem 1.5rem;
   }
 }
 .d-flex {

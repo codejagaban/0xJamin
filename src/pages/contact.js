@@ -7,10 +7,10 @@ import Button from "../components/Button/Button"
 
 export const Contact = () => {
 
-  return(
+  return (
     <Layout>
-      <SEO title="Contact"/>
-      <div className="greeting" style={{lineHeight: '2.5', fontSize: '20rem'}}>
+      <SEO title="Contact" />
+      <div className="greeting" style={{ lineHeight: '2.5', fontSize: '20rem' }}>
         Contact
       </div>
       <section className="text-center">
@@ -21,13 +21,11 @@ export const Contact = () => {
               <p>Got a question or something that sounds exciting , or just want
                 to say hello? Take a shot.</p>
             </div>
-            <Button linkTo={"mailto:hellocodekyd@gmail.com"}
-                    content={"Contact Me"}
-                    type={"mail"}/>
-
-
+            <Button
+              linkTo={"mailto:hellocodekyd@gmail.com"}
+              content={"Contact Me"}
+              type={"mail"} />
           </div>
-
         </div>
       </section>
     </Layout>
