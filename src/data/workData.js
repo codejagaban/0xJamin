@@ -40,7 +40,7 @@ const workData = [
   {
     title: 'Intellect Scientific Information',
     description: 'A multi-disciplinary bibliographic database service for academic Journals.',
-     link: 'http://intellectscientificinformation.com/',
+     link: 'https://isidatabase.org/',
     imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1598514780/Screenshot_from_2020-08-27_08-52-16_aqrybe.png',
     technologies: ['React', 'Redux', 'Javascript', 'APIs'],
   },
