@@ -1,6 +1,6 @@
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useRef, useEffect } from "react"
+import React, { useEffect, useState, useMemo } from "react"
 import Image from './image';
 import gsap from "gsap"
 
@@ -14,33 +14,26 @@ const Header  = () => {
   }
 }
 `)
-// create refs for navigation
-  const navRef = useRef();
-  const boxRef = useRef();
-  let tween = null
-
+  // initialize GSAP and store it in memory so it won't have to re-render when another state changes
+  const tween = useMemo(() => gsap.timeline({ paused: true }),[]);
+  const [navOpen, setNavOpen] = useState(false);
   useEffect(() => {
-    const animate = () => {
-       tween = gsap.to(".box", { height: "100vh", duration: .4,
-       transformOrigin: "bottom", stagger: .3,paused: true });
-    }
-    return animate()
-  }, [])
+    tween.to('.box', {
+      height: "100vh",
+      duration: .4,
+      transformOrigin: "bottom",
+      stagger: .3
+    });
+  }, [tween])
    // toggle menu
-   const onMenuClick = (e) => {
-      const navClass = navRef.current.classList
-      const boxClass = boxRef.current.classList
-      if(!navClass.contains('menuChange')) {
-        tween.play()
-        navClass.add("menuChange");
-        boxClass.add("menuChange");
-      }else  {
-        tween.reverse()
-        navClass.remove("menuChange");
-        boxClass.remove("menuChange");
-      }
-
+  const onMenuClick = (e) => {
+    setNavOpen(!navOpen);
   }
+  // fire animation if the navOpen state changes
+  useEffect(() => {
+    navOpen ? tween.play() : tween.reverse();
+    console.log(navOpen);
+  }, [navOpen, tween]);
   return (
     <>
       <header>
@@ -53,18 +46,16 @@ const Header  = () => {
             </div>
             <div className="spacer" />
             <button
-              className={`menu`}
+              className={`menu ${navOpen ? 'menuChange': ''}`}
               aria-label="menu"
-              onClick={onMenuClick}
-              ref={navRef}>
+              onClick={onMenuClick}>
               <div className="bar1" />
               <div className="bar2" />
             </button>
           </nav>
         </div>
         <div
-          className="menu-nav"
-          ref={boxRef}>
+          className={`menu-nav ${navOpen ? 'menuChange': ''}`}>
           <div className="box-wrapper">
             <div className={"box"} />
           </div>
@@ -83,8 +74,8 @@ const Header  = () => {
               <Link activeClassName="active" to="/contact" className="menu-nav__link">Contact</Link>
             </li>
             <li className="social">
-              <Link
-                to="https://twitter.com/codejagaban"
+              <a
+                href="https://twitter.com/codejagaban"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="social__link">
@@ -104,9 +95,9 @@ const Header  = () => {
                     7.72 0 0 0 23 3z"/>
                   </svg>
 
-              </Link>
-              <Link
-                to="https://github.com/codejagaban"
+              </a>
+              <a
+                href="https://github.com/codejagaban"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social__link">
@@ -126,9 +117,9 @@ const Header  = () => {
                     13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0
                     0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
                 </svg>
-              </Link>
-              <Link
-                to="https://web.facebook.com/trustjamin"
+              </a>
+              <a
+                href="https://web.facebook.com/trustjamin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social__link">
@@ -145,9 +136,9 @@ const Header  = () => {
                   className="feather feather-facebook">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
-              </Link>
-              <Link
-                to="https://www.linkedin.com/in/trust-jamin/"
+              </a>
+              <a
+                href="https://www.linkedin.com/in/trust-jamin/"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="social__link">
@@ -167,9 +158,9 @@ const Header  = () => {
                   <rect x="2" y="9" width="4" height="12" />
                   <circle cx="4" cy="4" r="2" />
                 </svg>
-              </Link>
-              <Link
-                to="https://dribbble.com/codekyd"
+              </a>
+              <a
+                href="https://dribbble.com/codekyd"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="social__link">
@@ -190,12 +181,9 @@ const Header  = () => {
                   <path d="M6.4 19c3.5-3.5 6-6.5 14.5-6.4"/>
                   <path d="M3.1 10.75c5 0 9.814-.38 15.314-5"/>
                 </svg>
-              </Link>
+              </a>
             </li>
           </ul>
-          {/*<div>*/}
-          {/*  */}
-          {/*</div>*/}
         </div>
       </header>
       </>

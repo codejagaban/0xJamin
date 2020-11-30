@@ -175,9 +175,17 @@
 
 // birthdayCakeCandles([3,3,4,5,1])
 
-var twoSum = function(nums, target) {
-  for(let i =0; i < nums.length; i++){
-  }
-  console.log(numbers);
-};
-twoSum([3,2,3], 9)
+// var twoSum = function(nums, target) {
+//   for(let i =0; i < nums.length; i++){
+//   }
+//   console.log(numbers);
+// };
+// twoSum([3,2,3], 9)
+[
+  [
+    1,2,3,4
+  ],
+  [
+    2,4,5,6
+  ]
+]
