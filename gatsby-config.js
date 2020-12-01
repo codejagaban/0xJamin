@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Trust Jamin Okpukoro`,
     description: `Hi, I'm Trust Jamin Okpukoro a Frontend Developer and a JavaScript Engineer passionate about making the web easily accessible for everyone.`,
-    author: `@codekyd`,
+    author: `@codejagaban`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,7 +23,7 @@ module.exports = {
         short_name: `codejagaban`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/codekyd-dark.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,

@@ -1,7 +1,6 @@
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useEffect, useState, useMemo } from "react"
-import Image from './image';
+import React, { useEffect, useState, useMemo } from "react";
 import gsap from "gsap"
 
 
@@ -41,7 +40,12 @@ const Header  = () => {
           <nav>
             <div className="nav-logo" style={{ width: "80px" }}>
               <Link to="/" activeClassName="active">
-                <Image />
+                <svg width="70" height="80" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="90" height="80" fill="#000000" />
+                  <ellipse cx="17.1976" cy="12.3288" rx="4.29936" ry="4.10959" fill="white" />
+                  <path d="M39.4 55.07C40.8 55.03 41.83 54.51 42.49 53.51C43.17 52.51 43.51 50.82 43.51 48.44V31.94C43.51 31.18 43.45 30.63 43.33 30.29C43.21 29.95 42.98 29.72 42.64 29.6C42.32 29.48 41.8 29.4 41.08 29.36V28.76C41.92 28.82 43.18 28.85 44.86 28.85C46.5 28.85 47.79 28.82 48.73 28.76V29.36C48.01 29.4 47.48 29.48 47.14 29.6C46.82 29.72 46.6 29.95 46.48 30.29C46.36 30.63 46.3 31.18 46.3 31.94V42.92C46.3 44.62 46.27 46.13 46.21 47.45C46.15 48.75 46.01 49.85 45.79 50.75C45.43 52.21 44.69 53.39 43.57 54.29C42.47 55.19 41.08 55.64 39.4 55.64V55.07Z" fill="white" />
+                </svg>
+
               </Link>
             </div>
             <div className="spacer" />
@@ -160,7 +164,7 @@ const Header  = () => {
                 </svg>
               </a>
               <a
-                href="https://dribbble.com/codekyd"
+                href="https://dribbble.com/codejagaban"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="social__link">
@@ -189,7 +193,6 @@ const Header  = () => {
       </>
     )
 }
-
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
