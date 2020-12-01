@@ -38,6 +38,13 @@ const workData = [
 
   },
   {
+    title: 'ET Records (WIP)',
+    description: 'A platform for building and supporting the next generation of musical talents in Africa.',
+    link: 'http://et-record.netlify.app/',
+    imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1606852724/Screenshot_from_2020-12-01_20-48-54_bxbfrb.png',
+    technologies: ['React','Gatsby','SASS','Javascript', 'TailwindCSS', 'Netlify CMS', 'JAMSTACK'],
+  },
+  {
     title: 'Intellect Scientific Information',
     description: 'A multi-disciplinary bibliographic database service for academic Journals.',
      link: 'https://isidatabase.org/',
@@ -53,11 +60,12 @@ const workData = [
   },
   {
     title: 'Oxford Editors',
-    description: 'An  article editing as a service platform with online payment features.',
+    description: 'An article editing as a service platform with online payment features.',
     link: 'https://oxfordeditors.org/',
     imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1605383935/Screenshot_from_2020-11-14_20-57-35_onkrnh.png',
     technologies: ['React','SASS','Javascript', 'APIs'],
   },
+
   ]
 
 
