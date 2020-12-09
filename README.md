@@ -12,9 +12,12 @@ I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combinat
 
 </p>
 
-![Jamin's github stats](https://github-readme-stats.vercel.app/api?username=codejagaban&theme=dark&show_icons=true)
+![Jamin's github stats](https://github-readme-stats.vercel.app/api?username=codejagaban&theme=default&show_icons=true) <br/>
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codejagaban&theme=dark&layout=compact)](https://github.com/codekyd/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codejagaban&theme=default&layout=compact)](https://github.com/codekyd/github-readme-stats) <br/>
+
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@codejagaban)](https://github.com/anuraghazra/github-readme-stats) <br/>
+
 
 ![Profile views](https://gpvc.arturio.dev/codejagaban)
