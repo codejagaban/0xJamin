@@ -1,5 +1,5 @@
 # Hi There 👋
-I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combination of `code` and design 🎨, thus I find passion in building sustainable, maintainable and visually compelling applications with user-friendly interaction that drive business growth and improve UX while making them functional at the same time.
+I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combination of `code` and design 🎨, thus I find passion in crafting visually compelling applications with user-friendly interaction that drive business growth and improve UX while making them functional at the same time.
 
 
 
@@ -11,13 +11,6 @@ I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combinat
  <a href="mailto:hellocodekyd@gmail.com"><img height="27" src="https://img.shields.io/badge/Email-%230077B5.svg?&style=for-the-badge&logo=gmail" alt=""></a>
 
 </p>
-
-![Jamin's github stats](https://github-readme-stats.vercel.app/api?username=codejagaban&theme=default&show_icons=true) <br/>
-
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=codejagaban&theme=default&layout=compact)](https://github.com/codekyd/github-readme-stats) <br/>
-
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=@codejagaban&theme=default&layout=compact)](https://github.com/anuraghazra/github-readme-stats) <br/>
 
 
 ![Profile views](https://gpvc.arturio.dev/codejagaban)
