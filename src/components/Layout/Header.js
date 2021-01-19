@@ -39,7 +39,11 @@ const Header  = () => {
         <div className="container">
           <nav>
             <div className="nav-logo" style={{ width: "80px" }}>
-              <Link to="/" activeClassName="active">
+              <Link
+                to="/"
+                activeClassName="active"
+                aria-label="Home"
+                >
                 <svg width="70" height="80" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="90" height="80" fill="#000000" />
                   <ellipse cx="17.1976" cy="12.3288" rx="4.29936" ry="4.10959" fill="white" />
@@ -65,17 +69,18 @@ const Header  = () => {
           </div>
           <ul className="menu-nav__items">
             <li>
-              <Link activeClassName="active" to="/" className="menu-nav__link">Home</Link>
-              <Link activeClassName="active" to="/about" className="menu-nav__link">About</Link>
-              <Link activeClassName="active" to="/works" className="menu-nav__link">works</Link>
+              <Link activeClassName="active" to="/" aria-label="Home" className="menu-nav__link">Home</Link>
+              <Link activeClassName="active" to="/about" aria-label="About" className="menu-nav__link">About</Link>
+              <Link activeClassName="active" to="/works" aria-label="Works" className="menu-nav__link">works</Link>
               <a
                 href={data.resume.publicURL}
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="Resume"
                 className="menu-nav__link">
                 Resume
               </a>
-              <Link activeClassName="active" to="/contact" className="menu-nav__link">Contact</Link>
+              <Link activeClassName="active" to="/contact" aria-label="Contact" className="menu-nav__link">Contact</Link>
             </li>
             <li className="social">
               <a
@@ -104,6 +109,7 @@ const Header  = () => {
                 href="https://github.com/codejagaban"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Github"
                 className="social__link">
                 <svg xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -125,6 +131,7 @@ const Header  = () => {
               <a
                 href="https://web.facebook.com/trustjamin"
                 target="_blank"
+                aria-label="Facebook"
                 rel="noopener noreferrer"
                 className="social__link">
                 <svg
@@ -144,6 +151,7 @@ const Header  = () => {
               <a
                 href="https://www.linkedin.com/in/trust-jamin/"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 target="_blank"
                 className="social__link">
                 <svg
@@ -166,6 +174,7 @@ const Header  = () => {
               <a
                 href="https://dribbble.com/codejagaban"
                 rel="noopener noreferrer"
+                aria-label="Dribbble"
                 target="_blank"
                 className="social__link">
                 <svg
