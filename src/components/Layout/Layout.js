@@ -53,9 +53,7 @@ const Layout = ({ children }) => {
           {
             x: "0rem",
             autoAlpha: 1,
-            ease: "slow(0.7, 0.7, false)",
-            delay: .3,
-            duration: 1
+            ease: "slow(0.2, 0.2, false)",
       });
     }
     return animate()

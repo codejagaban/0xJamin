@@ -181,11 +181,117 @@
 //   console.log(numbers);
 // };
 // twoSum([3,2,3], 9)
-[
-  [
-    1,2,3,4
-  ],
-  [
-    2,4,5,6
-  ]
-]
+// [
+//   [
+//     1,2,3,4
+//   ],
+//   [
+//     2,4,5,6
+//   ]
+// ]
+
+// const arr = [1, 2, 3, 4, 5, 6]
+// setInterval(() => {
+//   arr.map(item => {
+//     console.log(item);
+//   })
+// }, 1000);
+
+
+// function smallestInteger(arr) {
+//   // Write your code here
+//   const min = Math.min(...arr)
+//   console.log(min);
+// }
+// smallestInteger([1,2,3,4,4,5,6,7])
+
+// function findTrend(arr) {
+//   // Write your code here
+//   let trendArr = null
+//   for (let i = 0; i < arr.length; i++) {
+//     let prev = arr[i - 1]
+//     let present = arr[i]
+//     let next = arr[i + 1]
+//     if (prev > present && present > next) {
+//       trendArr = [false, true, arr.indexOf(prev)]
+//       break
+//     } else if (prev < present && present < next) {
+//       trendArr = [true, false, arr.indexOf(prev)]
+//       break
+//     } else if(!(prev < present && present < next))  {
+//       trendArr = [false, false, -1]
+//       // break
+//     }
+//   }
+//   console.log(trendArr);
+//   return trendArr
+// }
+// findTrend([14, 3, 3, 19, 18, 12, 7, 18, 22, 32, 20, 11, 8, 5])
+// false,
+// true,
+// newArr.indexOf(next)
+// findTrend([8,15,11,21,5,10,11,18,5])
+// true
+// false
+// 3
+
+
+// findTrend([4,10,10,10, 32])
+
+// false
+// false
+// -1
+
+// findTrend([3,32,12,15])
+// 3
+// 32
+// 12
+// 15
+
+// false
+// false
+// -1
+function result_expression(expression, variables) {
+  let expr = expression.split(" ");
+  const reverseExp = expr.reverse()
+  let stack =[];
+  const letters = /^[A-Za-z]+$/;
+
+  for(let i=0; i<reverseExp.length; i++) {
+    if(!isNaN(reverseExp[i]) && isFinite(reverseExp[i])) {
+      stack.push(reverseExp[i]);
+
+    }
+    else if(isNaN(reverseExp[i] && reverseExp[i].match(letters))){
+         stack.push(variables[reverseExp[i]]);
+        
+    }
+    else if( reverseExp[i] === "") {
+         stack.push(0);
+    }
+    else {
+      let a = stack.pop();
+      let b = stack.pop();
+      if(reverseExp[i] === "+") {
+        stack.push(parseInt(a) + parseInt(b));
+      } else if(reverseExp[i] === "-") {
+          stack.push(parseInt(b) - parseInt(a));
+        } else if(reverseExp[i] === "*") {
+            stack.push(parseInt(a) * parseInt(b));
+        } else if(reverseExp[i] === "/") {
+            stack.push(parseInt(b) / parseInt(a));
+        } else if(reverseExp[i] === "^") {
+            stack.push(Math.pow(parseInt(b), parseInt(a)));
+        }
+    }
+  }
+
+  if(stack.length > 1) {
+      console.log(stack)
+    return "ERROR";
+  }else {
+    return stack[0];
+  }
+
+}
+console.log(result_expression('1 3 5 x * -', {"x": 2}));  // Result: -14
