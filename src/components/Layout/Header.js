@@ -92,7 +92,7 @@ const Header  = () => {
             </li>
             <li className="social">
               <a
-                href="https://twitter.com/codejagaban"
+                href="https://twitter.com/tsjamin"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="social__link">
@@ -114,7 +114,7 @@ const Header  = () => {
 
               </a>
               <a
-                href="https://github.com/codejagaban"
+                href="https://github.com/tsjamin"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Github"
@@ -180,7 +180,7 @@ const Header  = () => {
                 </svg>
               </a>
               <a
-                href="https://dribbble.com/codejagaban"
+                href="https://dribbble.com/tsjamin"
                 rel="noopener noreferrer"
                 aria-label="Dribbble"
                 target="_blank"

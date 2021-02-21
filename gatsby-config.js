@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Trust Jamin Okpukoro`,
     description: `Hi, I'm Trust Jamin Okpukoro a Frontend Developer and a JavaScript Engineer passionate about making the web easily accessible for everyone. I love building web products, here you'll find some of my previous projects and some information about me.`,
-    author: `@codejagaban`,
+    author: `@tsjamin`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Trust Jamin Okpukoro`,
-        short_name: `codejagaban`,
+        short_name: `tsjamin`,
         start_url: `/`,
         display: `minimal-ui`,
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
