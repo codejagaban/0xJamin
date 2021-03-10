@@ -22,7 +22,7 @@ export const Contact = () => {
                 to say hello? Take a shot.</p>
             </div>
             <Button
-              linkTo={"mailto:hellocodekyd@gmail.com"}
+              linkTo={"mailto:hellotsjamin@gmail.com"}
               content={"Contact Me"}
               type={"mail"} />
           </div>

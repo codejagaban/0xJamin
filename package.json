@@ -3,7 +3,7 @@
   "private": true,
   "description": " Portfolio of tsjamin",
   "version": "0.1.0",
-  "author": "Trust Jamin Okpukoro <hellocodekyd@gmail.com>",
+  "author": "Trust Jamin Okpukoro <hellotsjamin@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.23.3",
