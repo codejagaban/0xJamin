@@ -1,5 +1,5 @@
 # Hi There 👋
-I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combination of `code` and design 🎨, thus I find passion in crafting visually compelling applications with user-friendly interaction that drive business growth and improve UX while making them functional at the same time.
+I'm Trust Jamin Okpukoro, a JavaScript Developer who loves the artistic combination of `code` and design 🎨, thus I find passion in crafting visually compelling applications with user-friendly interaction that drive business growth and improve UX.
 
 
 
