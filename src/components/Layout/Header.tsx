@@ -1,8 +1,8 @@
+import React, { useEffect, useState, useMemo } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import React, { useEffect, useState, useMemo } from "react"
-import gsap from "gsap"
+import gsap from "gsap";
 
- const  Header = () => {
+const  Header = () => {
   //Query from graphQL for CV
   const data = useStaticQuery(graphql`
     query {
@@ -255,5 +255,5 @@ import gsap from "gsap"
       </header>
     </>
   );
- };
- export default Header
+};
+export default Header;

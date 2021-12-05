@@ -1,8 +1,7 @@
 import React from "react";
-
+import Button from "components/Button";
 import Layout from "components/Layout";
 import Seo from "components/Seo";
-import Button from "components/Button";
 
 const Contact = () => {
   return (

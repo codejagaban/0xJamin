@@ -29,8 +29,8 @@ export default function Button({
               <path
                 fill="none"
                 stroke=""
-                stroke-width="5"
-                stroke-miterlimit="0"
+                strokeWidth="5"
+                strokeMiterlimit="0"
                 d="M.043 11.119h70.714M60.917 1.319l9.8 9.8-9.8
                                 9.8"
               ></path>

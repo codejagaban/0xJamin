@@ -1,10 +1,10 @@
 import React from "react";
+import Button from "components/Button";
 import Layout from "components/Layout";
-import Seo from "components/Seo";
 import MansoryLayout from "components/Mansory/Index";
 import MansoryItem from "components/Mansory/MansoryItem";
+import Seo from "components/Seo";
 import workData from "data/workData";
-import Button from "components/Button";
 
 const Works = () => {
   return (

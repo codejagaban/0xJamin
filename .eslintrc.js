@@ -4,15 +4,9 @@ module.exports = {
     es2021: true,
   },
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
-  plugins: ["@typescript-eslint"],
   extends: [
     "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
     "prettier",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended",
-    "eslint:recommended",
-    "prettier/@typescript-eslint"
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -21,7 +15,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "import"],
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],

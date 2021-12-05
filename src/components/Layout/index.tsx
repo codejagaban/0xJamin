@@ -1,8 +1,7 @@
 
-import React, { useEffect} from "react"
+import React, { useEffect} from "react";
 import gsap from "gsap";
-
-import Header from "./Header"
+import Header from "./Header";
 interface LayoutProps {
   children: React.ReactNode
 }
@@ -14,14 +13,14 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
         opacity: 0,
         autoAlpha: 0
       },
-        {
-          y: "0rem",
-          autoAlpha: 1,
-          ease: "power4.out",
-          delay: .5,
-          duration: 1,
-          stagger: .2
-        });
+      {
+        y: "0rem",
+        autoAlpha: 1,
+        ease: "power4.out",
+        delay: .5,
+        duration: 1,
+        stagger: .2
+      });
       gsap.fromTo(".aniBottom",
         {
           y: "5rem",
@@ -36,20 +35,20 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
           duration: 1,
           stagger: .4
         });
-        gsap.fromTo(".aniLeft",
-          {
-            x: "-10rem",
-            opacity: 0,
-            autoAlpha: 0
-          },
-          {
-            x: "0rem",
-            autoAlpha: 1,
-            ease: "slow(0.2, 0.2, false)",
-      });
-    }
-    return animate()
-  }, [])
+      gsap.fromTo(".aniLeft",
+        {
+          x: "-10rem",
+          opacity: 0,
+          autoAlpha: 0
+        },
+        {
+          x: "0rem",
+          autoAlpha: 1,
+          ease: "slow(0.2, 0.2, false)",
+        });
+    };
+    return animate();
+  }, []);
   return (
     <div className="site fade-in">
       <Header />
@@ -57,7 +56,7 @@ const Layout = ({ children }: LayoutProps): JSX.Element => {
         <main>{children}</main>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

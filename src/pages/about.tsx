@@ -1,9 +1,8 @@
-import React from 'react'
-import styled from 'styled-components';
-
-import Layout from 'components/Layout';
-import Seo from "components/Seo";
+import React from "react";
+import styled from "styled-components";
 import Button from "components/Button";
+import Layout from "components/Layout";
+import Seo from "components/Seo";
 
 const About = () => {
   return (
@@ -72,7 +71,7 @@ font-size: 14px;
 line-height: 12px;
 }
 }
-`
+`;
 const StyledDiv = styled.div`
 display: flex;
 justify-content: space-between;
@@ -90,5 +89,5 @@ padding: 1rem
 }
 }
 
-`
-export default About
+`;
+export default About;
