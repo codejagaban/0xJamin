@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Trust Jamin Okpukoro <hellotsjamin@gmail.com>",
   "dependencies": {
+    "@types/react-helmet": "^6.1.4",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.3.0",
     "gatsby-image": "^3.11.0",
