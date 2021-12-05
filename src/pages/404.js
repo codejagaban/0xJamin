@@ -1,12 +1,12 @@
 import React from "react"
 
-import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
-import Button from "../components/Button/Button"
+import Layout from "components/Layout/Layout"
+import Seo from "components/Seo"
+import Button from "components/Button"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
+    <Seo title="404: Not found" />
     <div className="greeting" style={{ lineHeight: '1.2' }}>404</div>
     <div className="container">
       <div className="content">

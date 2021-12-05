@@ -1,20 +1,12 @@
 
 import React, { useEffect} from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import gsap from "gsap";
+
 import Header from "./Header"
-import "../../styles/global.scss";
-import gsap from "gsap"
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+interface LayoutProps {
+  children: React.ReactNode
+}
+const Layout = ({ children }: LayoutProps): JSX.Element => {
   useEffect(() => {
     const animate = () => {
       gsap.fromTo(".aniTop", {
@@ -60,15 +52,12 @@ const Layout = ({ children }) => {
   }, [])
   return (
     <div className="site fade-in">
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div>
         <main>{children}</main>
       </div>
     </div>
   )
-}
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

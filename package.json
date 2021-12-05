@@ -1,11 +1,12 @@
 {
-  "name": "tsjamin",
+  "name": "codejagaban",
   "private": true,
-  "description": " Portfolio of tsjamin",
+  "description": " Portfolio of Trust Jamin",
   "version": "0.1.0",
   "author": "Trust Jamin Okpukoro <hellotsjamin@gmail.com>",
   "dependencies": {
     "@types/react-helmet": "^6.1.4",
+    "@types/styled-components": "^5.1.16",
     "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.3.0",
     "gatsby-image": "^3.11.0",
@@ -28,8 +29,18 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "env-cmd": "^10.1.0",
-    "prettier": "2.5.1"
+    "eslint": "^8.4.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.2",
+    "prettier": "^2.5.1"
   },
   "keywords": [
     "gatsby"
@@ -38,18 +49,18 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
+    "eslint:fix": "eslint --fix 'src/**/*.tsx'",
     "dev": "env-cmd -f .env.development gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }

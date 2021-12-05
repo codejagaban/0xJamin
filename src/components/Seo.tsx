@@ -5,9 +5,9 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface SeoProps  {
-  lang: string,
-  meta: [],
-  description: string,
+  lang?: string,
+  meta?: [],
+  description?: string,
   title: string
 }
 export default function Seo({ description, lang= "en", meta, title }: SeoProps): JSX.Element {
@@ -34,7 +34,7 @@ export default function Seo({ description, lang= "en", meta, title }: SeoProps):
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
+      meta={meta && [
         {
           name: `description`,
           content: metaDescription,
