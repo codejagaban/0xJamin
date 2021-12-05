@@ -1,9 +1,10 @@
 import React from "react";
-import Layout from "components/Layout/Layout";
+
+import Layout from "components/Layout";
 import Seo from "components/Seo";
 import Button from "components/Button";
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <Layout>
       <Seo title="Contact" />

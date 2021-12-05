@@ -36,6 +36,7 @@ module.exports = {
         precachePages: [`/`,`/about/`,`/works/`, `/contact`],
       },
     },
+    `gatsby-plugin-root-import`
 
   ],
 }

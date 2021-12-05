@@ -38,6 +38,7 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
+    "gatsby-plugin-root-import": "^2.0.8",
     "husky": "7.0.4",
     "lint-staged": "12.1.2",
     "prettier": "^2.5.1"

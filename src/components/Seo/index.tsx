@@ -10,7 +10,7 @@ interface SeoProps  {
   description?: string,
   title: string
 }
-export default function Seo({ description, lang= "en", meta, title }: SeoProps): JSX.Element {
+const Seo = ({ description, lang= "en", meta, title }: SeoProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -72,3 +72,5 @@ export default function Seo({ description, lang= "en", meta, title }: SeoProps):
       </Helmet>
   )
 }
+
+export default Seo

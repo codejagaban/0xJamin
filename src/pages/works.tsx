@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "components/Layout/Layout";
+import Layout from "components/Layout";
 import Seo from "components/Seo";
 import MansoryLayout from "components/Mansory/Index";
 import MansoryItem from "components/Mansory/MansoryItem";
@@ -17,7 +17,7 @@ const Works = () => {
           <p className="aniLeft">Some projects I've worked on</p>
           <MansoryLayout>
             {workData.map((item, index) => (
-              <MansoryItem key={index} index={index} item={item} />
+              <MansoryItem key={index} item={item} />
             ))}
           </MansoryLayout>
           <Button linkTo={"/contact"} content={" Contact Me"} />

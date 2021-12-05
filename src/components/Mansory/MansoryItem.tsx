@@ -1,58 +1,55 @@
+import React from "react";
+import styled from "styled-components";
 
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-
-const propTypes = {
-  item: PropTypes.object,
+type MansoryProps = {
+  item: {
+    link?: string;
+    title?: string;
+    description?: string;
+    technologies?: string[];
+    imageUrl?: string;
+  };
 };
-
-const MansoryItem = ({ item  }) => {
-  const arrayRandomItem = (array) => {
-    return  array[Math.floor(Math.random() * array.length | 0)]
-  }
-
+const MansoryItem = ({ item }: MansoryProps) => {
+  const arrayRandomItem = (array: string[]) => {
+    return array[Math.floor((Math.random() * array.length) | 0)];
+  };
 
   return (
+    <>
+      <ItemStyle
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          height: arrayRandomItem(["300px", "400px", "280px", "480px"]),
+        }}
+        role="gridcell"
+        id="cardHover"
+        aria-label={`${item.title} ${item.description}`}
+        className="aniBottom"
+      >
+        {/*Image here*/}
 
-        <>
-          <ItemStyle
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              height: arrayRandomItem(['300px', '400px', '280px','480px']),
-            }}
-            role="gridcell"
-            id="cardHover"
-            aria-label={`${item.title} ${item.description}`}
-            className="aniBottom"
+        <img src={item.imageUrl} alt={item.title} />
 
-          >
-            {/*Image here*/}
-
-            <img src={item.imageUrl} alt={item.title}/>
-
-            <div>
-
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              {item.technologies && (
-                <p className="d-flex flex-wrap">
-                  {item.technologies.map((tech, index) => (
-                    <span key={index} className="tech">
-                      {tech}
-                    </span>
-                  ))}
-                </p>
-              )}
-
-            </div>
-
-
-          </ItemStyle>
-        </>
-  )}
+        <div>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          {item.technologies && (
+            <p className="d-flex flex-wrap">
+              {item.technologies.map((tech, index) => (
+                <span key={index} className="tech">
+                  {tech}
+                </span>
+              ))}
+            </p>
+          )}
+        </div>
+      </ItemStyle>
+    </>
+  );
+};
 
 const ItemStyle = styled.a`
   margin: 0 0 1.5em;
@@ -80,7 +77,7 @@ const ItemStyle = styled.a`
     transition: 1s ease-in-out;
   }
   &:before {
-    content: '';
+    content: "";
     pointer-events: none;
     display: block;
     position: absolute;
@@ -90,7 +87,7 @@ const ItemStyle = styled.a`
     left: 0px;
   }
   &:after {
-    content: '';
+    content: "";
     pointer-events: none;
     position: absolute;
     top: 0px;
@@ -109,13 +106,13 @@ const ItemStyle = styled.a`
       opacity: 1;
     }
     img {
-    transform: scale(1.03);
+      transform: scale(1.03);
     }
     div {
       z-index: 999;
-    transform: none;
-    opacity: 1;
-}
+      transform: none;
+      opacity: 1;
+    }
   }
   h3 {
     color: #fff;
@@ -171,7 +168,5 @@ const ItemStyle = styled.a`
     }
   }
 `;
-
-MansoryItem.propTypes = propTypes;
 
 export default MansoryItem;

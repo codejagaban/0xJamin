@@ -1,13 +1,11 @@
+import React from "react";
+import styled from "styled-components";
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-const propTypes = {
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.element]),
+type MansoryLayoutProps = {
+  children: React.ReactNode;
 };
 
-const MansoryLayout = ({ children }) => {
+const MansoryLayout = ({ children }: MansoryLayoutProps) => {
   return <Layout>{children}</Layout>;
 };
 
@@ -61,6 +59,5 @@ const Layout = styled.div`
   }
 `;
 
-MansoryLayout.propTypes = propTypes;
 
 export default MansoryLayout;
