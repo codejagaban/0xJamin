@@ -38,7 +38,39 @@ const workData = [
 
   },
   {
-    title: 'ET Records (WIP)',
+    title: 'Community Leads',
+    description: 'A community to manage and grow community builders',
+    link: 'https://www.communityleads.africa/',
+    imageUrl: 'https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.47.11_PM_-fL7hAVIP.png',
+    technologies: ['TypeScript', 'Gatsby', 'TailwindCSS', 'HTML5', 'styled-components', 'CSS']
+
+  },
+  {
+    title: 'BSCS',
+    description: 'A community to manage and grow community builders',
+    link: 'https://bscs-flora.vercel.app/',
+    imageUrl: 'https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.48.44_PM_6qPpFt-K8nq.png',
+    technologies: ['TypeScript', 'Nextjs', 'FaunaDB', 'HTML5', 'styled-components', 'CSS']
+
+  },
+  {
+    title: 'Finanzchef24',
+    description: 'An insurance as a service platform tailored to protect small- medium businesses and stratups',
+    link: 'https://www.finanzchef24.de/',
+    imageUrl: 'https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.52.16_PM_LrRDBecUlDV.png',
+    technologies: ['TypeScript', 'Nextjs', 'Design System', 'HTML5', 'styled-components', 'CSS', 'GraphQL']
+
+  },
+  {
+    title: 'SpotPet',
+    description: 'Pet insurance tailored to protect Dogs and Cats',
+    link: 'https://www.spotpetinsurance.ca/',
+    imageUrl: 'https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.52.16_PM_LrRDBecUlDV.png',
+    technologies: ['TypeScript', 'Gatsby','Prismic CMS', 'HTML5', 'TailwindCSS', 'CSS', 'GraphQL']
+
+  },
+  {
+    title: 'ET Records',
     description: 'A platform for building and supporting the next generation of musical talents in Africa.',
     link: 'http://et-record.netlify.app/',
     imageUrl: 'https://res.cloudinary.com/trustjamin/image/upload/v1606852724/Screenshot_from_2020-12-01_20-48-54_bxbfrb.png',
