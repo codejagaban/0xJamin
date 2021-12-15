@@ -1,0 +1,25 @@
+export default {
+  greeting: "Hello!",
+  backgroundIntro: "I'm Trust Jamin, a Software Engineer based in Nigeria. I enjoy creating things that works on the web, whether that be websites, applications, or anything in between",
+  goal: "My goal is to always build highly scalable products that provide pixel-perfect, performant experiences.",
+  skillsHeading: "Here are a few technologies I've been working with recently:",
+  skills: [
+    "JavaScript (ES6+)",
+    "HTML & (S)CSS",
+    "React",
+    "TypeScript",
+    "Redux",
+    "Gatsby.js",
+    "Next.js",
+    "Jest",
+    "Material UI",
+    "Node.js",
+    "Express.js",
+    "RESTful APIs",
+    "ARIA",
+    "GraphQL",
+    "Prismic CMS",
+    "Jamstack Architecture",
+    "Contentful",
+  ]
+};

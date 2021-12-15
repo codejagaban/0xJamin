@@ -10,15 +10,15 @@ const MansoryLayout = ({ children }: MansoryLayoutProps) => {
 };
 
 const Layout = styled.div`
-  margin: 1.5em 0;
-  animation-duration: 1s;
+  margin: 2rem 0;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   -webkit-animation-fill-mode: both;
   max-width: auto;
-  column-gap: 1.5em;
+  column-gap: 3.5rem;
   @media only screen and (min-width: 1024px) {
     column-count: 2;
   }

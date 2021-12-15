@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "components/Button";
 import Layout from "components/Layout";
 import Seo from "components/Seo";
+import data from "data/about";
 
 const About = () => {
   return (
@@ -11,37 +12,18 @@ const About = () => {
       <div className="greeting">About</div>
       <div className="container">
         <h2>About Me.</h2>
-        <p>Hello! </p>
+        <p>{data.greeting} </p>
         <p>
-          I'm Trust Jamin, a Software Engineer based in Nigeria. I enjoy
-          creating things that works on the web, whether that be websites,
-          applications, or anything in between.
+          {data.backgroundIntro}
         </p>
         <StyledDiv>
           <h2>
-            My goal is to always build scalable products that provide
-            pixel-perfect, performant experiences.
+            {data.goal}
           </h2>
           <div>
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>{data.skillsHeading}</p>
             <StyledList>
-              <li>JavaScript (ES6+)</li>
-              <li>HTML & (S)CSS</li>
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Redux</li>
-              <li>Gatsby.js</li>
-              <li>Next.js</li>
-              <li>Jest</li>
-              <li>Material UI</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>RESTful APIs</li>
-              <li>ARIA</li>
-              <li>GraphQL</li>
-              <li>Prismic CMS</li>
-              <li>Jamstack Architecture</li>
-              <li>Contentful</li>
+              {data.skills.map((skill) => (<li key={skill}>{skill}</li>))}
             </StyledList>
           </div>
         </StyledDiv>

@@ -52,11 +52,10 @@ const MansoryItem = ({ item }: MansoryProps) => {
 };
 
 const ItemStyle = styled.a`
-  margin: 0 0 1.5em;
+  margin: 0 0 3rem;
   text-decoration: none;
   position: relative;
   cursor: pointer;
-  border-radius: 9px;
   object-fit: cover;
   background-color: var(--button-index);
   background-position: center;
@@ -65,7 +64,7 @@ const ItemStyle = styled.a`
   padding: 1.4rem 2rem;
   display: flex;
   align-items: flex-end;
-  border-radius: 9px;
+  border-radius: 3px;
   break-inside: avoid;
   img {
     width: 100%;

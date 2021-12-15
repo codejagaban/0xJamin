@@ -2,6 +2,7 @@ import React from "react";
 import Button from "components/Button";
 import Layout from "components/Layout";
 import Seo from "components/Seo";
+import data from "data/home";
 
 const IndexPage = () => {
   return (
@@ -14,12 +15,10 @@ const IndexPage = () => {
         <section className="intro">
           <div className="content">
             <div className="intro__content">
-              <p className="toast__content">Hi, I'm</p>
-              <h1 className="aniLeft">Trust Jamin Okpukoro</h1>
+              <p className="toast__content">{ data.greeting }</p>
+              <h1 className="aniLeft">{ data.name }</h1>
               <p className="aniBottom">
-                Frontend developer who loves the artistic combination of code
-                and design, I like building user centered applications so I am
-                passionate in making the web easily accessible for everyone.
+                { data.intro }
               </p>
               <Button linkTo="/about" content={"About Me"} />
             </div>

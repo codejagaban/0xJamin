@@ -4,7 +4,7 @@ import Layout from "components/Layout";
 import MansoryLayout from "components/Mansory/Index";
 import MansoryItem from "components/Mansory/MansoryItem";
 import Seo from "components/Seo";
-import workData from "data/workData";
+import data from "data/workData";
 
 const Works = () => {
   return (
@@ -14,9 +14,9 @@ const Works = () => {
       <div className="container">
         <h2 className="aniLeft">Works.</h2>
         <div>
-          <p className="aniLeft">Some projects I've worked on</p>
+          <p className="aniLeft">{data.title}</p>
           <MansoryLayout>
-            {workData.map((item, index) => (
+            {data.workData.map((item, index) => (
               <MansoryItem key={index} item={item} />
             ))}
           </MansoryLayout>
