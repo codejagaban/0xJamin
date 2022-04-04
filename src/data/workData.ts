@@ -77,6 +77,12 @@ export default {
       link: "https://isidatabase.org/",
       imageUrl: "https://res.cloudinary.com/trustjamin/image/upload/v1598514780/Screenshot_from_2020-08-27_08-52-16_aqrybe.png",
       technologies: ["React", "Redux", "Javascript", "APIs"],
+    }, {
+      title: "JAUIT Training",
+      description: "A 1-year training program on Web Development, Product Design & Digital Marketing that will give you access to world-class resources, facilitators, and mentors, while getting a 3 month paid internship and work placement at the end of the program.",
+      link: "https://jauit.com",
+      imageUrl: "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-04-04_at_9.08.56_AM_juj_YCRpW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649060220985",
+      technologies: ["TypeScript", "Gatsby", "HTML5", "styled-components", "CSS"]
     },
     {
       title: "Oxford Editors",
