@@ -60,7 +60,7 @@ export default {
     {
       title: "SpotPet",
       description: "Pet insurance tailored to protect Dogs and Cats",
-      link: "https://www.spotpetinsurance.ca/",
+      link: "https://spotpetins.com/",
       imageUrl: "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.51.46_PM_8l4u0P1JU.png",
       technologies: ["TypeScript", "Gatsby","Prismic CMS", "HTML5", "TailwindCSS", "CSS", "GraphQL", "A11y"]
     },
