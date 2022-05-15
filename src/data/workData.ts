@@ -65,6 +65,27 @@ export default {
       technologies: ["TypeScript", "Gatsby","Prismic CMS", "HTML5", "TailwindCSS", "CSS", "GraphQL", "A11y"]
     },
     {
+      title: "Canadian Institute of Food Safety",
+      description: "The Canadian Institute of Food Safety (CIFS) reduces food-borne illness in Canada through education, promotion and advocacy for better food safety.",
+      link: "https://www.foodsafety.ca/",
+      imageUrl: "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-05-15_at_1.17.58_AM_LdhIQlvwG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652574122740",
+      technologies: ["TypeScript", "Gatsby","StoryBlok CMS", "HTML5", "Styled-components", "CSS", "GraphQL", "A11y"]
+    },
+    {
+      title: "Camino Financial",
+      description: "Camino Financial helps overlooked entrepreneurs / minority business owners fund their dreams by offering loans at very low interest rates",
+      link: "https://www.caminofinancial.com",
+      imageUrl: "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-05-15_at_1.17.31_AM_Q4gB2wAe9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652574114733",
+      technologies: ["TypeScript", "Gatsby","Contentful CMS", "HTML5", "Styled-components", "Post CSS", "StoryBook", "GraphQL", "JavaScript"]
+    },
+    {
+      title: "Insta Cert",
+      description: "Insta Cert offers Food Handler Certificate online to food workers in Canada",
+      link: "https://instacert.ca",
+      imageUrl: "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-05-15_at_1.17.41_AM_AdXEN-T7x.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652574115291",
+      technologies: ["TypeScript", "Nextjs","StoryBlok CMS", "HTML5", "Styled-components", "CSS", "GraphQL", "JavaScript"]
+    },
+    {
       title: "ET Records",
       description: "A platform for building and supporting the next generation of musical talents in Africa.",
       link: "http://et-record.netlify.app/",
