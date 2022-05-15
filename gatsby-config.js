@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Trust Jamin Okpukoro",
     description: "Hi, I'm Trust Jamin Okpukoro a Frontend Developer and a JavaScript Engineer passionate about making the web easily accessible for everyone. I love building web products, here you'll find some of my previous projects and some information about me.",
-    author: "@tsjamin",
+    author: "@codejagaban",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
