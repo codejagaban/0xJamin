@@ -79,6 +79,13 @@ export default {
       technologies: ["TypeScript", "Gatsby","Contentful CMS", "HTML5", "Styled-components", "Post CSS", "StoryBook", "GraphQL", "JavaScript"]
     },
     {
+      title: "Alpro Foundation",
+      description: "Alpro Foundation provides some of the latest must-read scientific publications and reports on plant-based eating",
+      link: "https://www.alprofoundation.org/",
+      imageUrl: "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-07-15_at_9.16.00_AM_A7o4MRJMu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657873010480",
+      technologies: ["TypeScript", "Gatsby","StoryBlok CMS", "HTML5", "CSS Modules", "GraphQL", "JavaScript"]
+    },
+    {
       title: "Insta Cert",
       description: "Insta Cert offers Food Handler Certificate online to food workers in Canada",
       link: "https://instacert.ca",
