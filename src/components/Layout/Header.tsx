@@ -6,7 +6,7 @@ const  Header = () => {
   //Query from graphQL for CV
   const data = useStaticQuery(graphql`
     query {
-      resume: file(relativePath: { eq: "docs/trust-jamin.pdf" }) {
+      resume: file(relativePath: { eq: "docs/trust-jamin-resume.pdf" }) {
         publicURL
       }
     }
