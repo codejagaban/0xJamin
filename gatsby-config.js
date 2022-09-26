@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s | Trust Jamin Okpukoro",
     siteUrl: "https://www.jagaban.dev", // No trailing slash allowed!
     description:
-      "Hi, I'm Trust Jamin  a Frontend Developer and a JavaScript Engineer passionate about making the web easily accessible for everyone. I love building web products, here you'll find some of my previous projects and some information about me.",
+      "Hi, I'm a JavaScript Engineer devoted to making the web easily accessible. here you'll find some of my previous projects and pieces of information about me.",
     author: "@codejagaban",
     url: "https://www.jagaban.dev", // No trailing slash allowed!
     image: "/static/banner.png", // Path to the image placed in the 'static' folder, in the project's root directory.

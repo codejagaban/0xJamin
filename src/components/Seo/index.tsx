@@ -54,6 +54,7 @@ const Seo = ({ description, lang = "en", image, title }: SeoProps) => {
       <meta name="description" content={seo.description} />
       <meta name="image" content={image} />
       <meta property="og:sitename" content="Trust Jamin" />
+      <meta property="og:type" content="website" />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
