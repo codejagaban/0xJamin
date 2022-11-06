@@ -16,7 +16,6 @@ export default function Button({
     return (
       <a href={linkTo} className="btn aniBottom">
         <div className="btn__content">
-          {" "}
           {content}
           <div className="bounce">
             <svg
@@ -43,7 +42,6 @@ export default function Button({
     return (
       <Link to={linkTo} className="btn aniBottom">
         <div className="btn__content">
-          {" "}
           {content}
           <div className="bounce">
             <svg
