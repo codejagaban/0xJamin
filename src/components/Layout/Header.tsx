@@ -41,7 +41,7 @@ const  Header = () => {
                   width="70"
                   height="68"
                   viewBox="0 0 233 232"
-                  fill="none"                
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -75,182 +75,162 @@ const  Header = () => {
         </div>
         <div className={`menu-nav ${navOpen ? "menuChange" : ""}`}>
           <div className="box-wrapper">
-            <div className={"box"} />
+            <div className="box" />
           </div>
-          <ul className="menu-nav__items">
-            <li>
-              <Link
-                activeClassName="active"
-                to="/"
-                aria-label="Home"
-                className="menu-nav__link"
-              >
-                Home
-              </Link>
-              <Link
-                activeClassName="active"
-                to="/about"
-                aria-label="About"
-                className="menu-nav__link"
-              >
-                About
-              </Link>
-              <Link
-                activeClassName="active"
-                to="/works"
-                aria-label="Works"
-                className="menu-nav__link"
-              >
-                works
-              </Link>
-              <a
-                href={data.resume.publicURL}
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label="Resume"
-                className="menu-nav__link"
-              >
-                Resume
-              </a>
-              <Link
-                activeClassName="active"
-                to="/contact"
-                aria-label="Contact"
-                className="menu-nav__link"
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="social">
-              <a
-                href="https://twitter.com/codejagaban"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="social__link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-twitter"
+          <div className="menu-nav__items">
+            <ul className="menu-nav__items_lists">
+              <li>
+                <Link
+                  activeClassName="active"
+                  to="/"
+                  aria-label="Home"
+                  className="menu-nav__link"
                 >
-                  <path
-                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3
+                Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClassName="active"
+                  to="/about"
+                  aria-label="About"
+                  className="menu-nav__link"
+                >
+                About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClassName="active"
+                  to="/works"
+                  aria-label="Works"
+                  className="menu-nav__link"
+                >
+                works
+                </Link>
+              </li>
+              <li>
+                <a
+                  href={data.resume.publicURL}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Resume"
+                  className="menu-nav__link"
+                >
+                Resume
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://blog.jamiin.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Blog"
+                  className="menu-nav__link"
+                >
+                Blog
+                </a>
+              </li>
+              <li>
+                <Link
+                  activeClassName="active"
+                  to="/contact"
+                  aria-label="Contact"
+                  className="menu-nav__link"
+                >
+                Contact
+                </Link>
+              </li>
+            </ul>
+            {/* socials */}
+            <ul className=" socials">
+              <li>
+                <a
+                  href="https://twitter.com/0xJamin"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="social__link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-twitter"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3
                    4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72
                     7.72 0 0 0 23 3z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://github.com/codejagaban"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Github"
-                className="social__link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-github"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/0xJamin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Github"
+                  className="social__link"
                 >
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-github"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54
                     6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38
                     13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0
                     0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://web.facebook.com/trustjamin"
-                target="_blank"
-                aria-label="Facebook"
-                rel="noopener noreferrer"
-                className="social__link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-facebook"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/trust-jamin/"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  className="social__link"
                 >
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/trust-jamin/"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                target="_blank"
-                className="social__link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-linkedin"
-                >
-                  <path
-                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-linkedin"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6
                   0 0 1 6-6z"
-                  />
-                  <rect x="2" y="9" width="4" height="12" />
-                  <circle cx="4" cy="4" r="2" />
-                </svg>
-              </a>
-              <a
-                href="https://dribbble.com/codejagaban"
-                rel="noopener noreferrer"
-                aria-label="Dribbble"
-                target="_blank"
-                className="social__link"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-brand-dribbble"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.2"
-                  stroke="#505050"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M9 3.6c5 6 7 10.5 7.5 16.2" />
-                  <path d="M6.4 19c3.5-3.5 6-6.5 14.5-6.4" />
-                  <path d="M3.1 10.75c5 0 9.814-.38 15.314-5" />
-                </svg>
-              </a>
-            </li>
-          </ul>
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
     </>

@@ -1,5 +1,6 @@
 export default  {
   greeting: "Hi I'm",
   name: "Trust Jamin",
-  intro: "Frontend Engineer who loves the artistic combination of code and design, I like building user centered applications so I am passionate in making the web easily accessible for everyone."
+  intro: "Software Engineer and Developer Advocate🥑, I enjoy creating products that improve the quality of life for their users and solves problems. Having an affinity for helping others grow and become better, I lead a number of developer initiatives and communities across Africa and also share my knowledge through technical content and public speaking."
+
 };

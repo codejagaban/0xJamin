@@ -176,19 +176,6 @@ width: 100vw;
 background: #ffffff;
 }
 
-//.box:nth-child(1) {
-//  transition: all 1s ease-in-out  0.1s;
-//}
-//.box:nth-child(2) {
-//  transition: all 1s ease-in-out 0.3s ;
-//}
-//.box:nth-child(3) {
-//  transition: all 1s ease-in-out 0.6s ;
-//}
-//
-//.box:nth-child(4) {
-//  transition: all 1s ease-in-out 0.9s ;
-//}
 .menu-nav__items {
   display: none;
 }
@@ -196,19 +183,22 @@ background: #ffffff;
 .menuChange .menu-nav__items {
   color: #505050;
   font-size: 3rem;
-  display: inline-block;
-  
+  display: inherit;
+  z-index: 99;
   position: absolute;
   top: 30%;
-  list-style: none;
-  z-index: 99;
   left: 50%;
   text-transform: capitalize;
 transform: translateX(-50%);
 }
+.menuChange .menu-nav__items_lists {
+  display: flex;
+  list-style: none;
+}
 .menu-nav__link {
   color: #505050;
-  padding: 1rem 2rem;
+  padding: 1rem;
+  margin: 0 1rem;
   font-family: 'clean-ui', sans-serif;;
   display: inline-block;
   text-decoration: none;
@@ -242,9 +232,11 @@ transform: translateX(-50%);
   animation:inHalf 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 
 }
-.social {
+.socials {
   margin-top: 20%;
-  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .social__link {
   color: #505050;
@@ -596,8 +588,6 @@ text-decoration: none;
   display: flex;
   flex-flow: column wrap;
   align-content: space-between;
-  /* Your container needs a fixed height, and it
-   * needs to be taller than your tallest column. */
   height: 1200px;
   counter-reset: workCard;
 }
